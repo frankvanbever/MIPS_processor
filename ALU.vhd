@@ -54,7 +54,7 @@ begin
 			when others => Result := X"00000000";
 		end case;
 		if(ALU_Control_In="0111")then
-			if(Result<0) then
+			if(Result<X"00000000") then
 				Result:=X"00000001";
 			else
 				Result:=X"00000000";
