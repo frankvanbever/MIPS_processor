@@ -13,7 +13,7 @@ entity MUX is
 		     -- input signals
 		     clk : in std_logic;
 		     selector : in std_logic;
-	
+
 
 		     -- input vectors	
 		     vector_in_1 : in std_logic_vector(31 downto 0);
@@ -22,7 +22,7 @@ entity MUX is
 		     -- output vectors
 		     vector_out : out std_logic_vector(31 downto 0)
 
-);
+	     );
 end MUX;
 
 architecture behavioral of MUX is
