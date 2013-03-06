@@ -32,7 +32,7 @@ begin
 		if rising_edge(clk) then
 			if selector = '0' then
 				vector_out <= vector_in_1;
-			elsif selector = '0' then
+			elsif selector = '1' then
 				vector_out <= vector_in_2;
 			end if;
 		end if;
