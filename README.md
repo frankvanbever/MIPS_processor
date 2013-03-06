@@ -1,3 +1,3 @@
 # ROLLMIPS-1
 
-Processor for advancement of great nation of democratic peoples republic of Korea!!!
+Regularly Operating Logicaly Logic MIPS Processor
