@@ -50,6 +50,7 @@ begin
 			when "0010" => Result := ALU_Input_1 + ALU_Input_2;
 			when "0110" => Result := ALU_Input_1 - ALU_Input_2;
 			when "0111" => Result := ALU_Input_1 - ALU_Input_2;
+			when "1100" => Result := ALU_Input_1 NOR ALU_Input_2;
 			when others => Result := X"00000000";
 		end case;
 		if(ALU_Control_In="0111")then
