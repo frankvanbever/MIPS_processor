@@ -1,4 +1,3 @@
-# RollMIPS processor
+# ROLLMIPS-1
 
-Doin' it for the lulz!!1!
-
+Processor for advancement of great nation of democratic peoples republic of Korea!!!
