@@ -27,7 +27,9 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
- 
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
@@ -93,8 +95,16 @@ BEGIN
       wait for 100 ns;	
 
       wait for clk_period*10;
-
-      -- insert stimulus here 
+	MemWrite <= '1';
+	adress <= X"00000000";
+	write_data <= X"FFFFFFFF";
+	
+	wait until rising_edge(clk);
+	
+	MemWrite <= '0';
+	MemRead <= '1';
+	wait until rising_edge(clk);
+	assert read_data = X"FFFFFFFF" report "Data has not been written correctly";
 
       wait;
    end process;

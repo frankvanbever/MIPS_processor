@@ -31,7 +31,7 @@ end data_memory;
 architecture behavioral of data_memory is
 
 subtype word is std_logic_vector(31 downto 0);
-type memory_array is array (0 to 64) of word;
+type memory_array is array (0 to 63) of word;
 
 shared variable dataMem : memory_array :=
 	(X"00000000",
