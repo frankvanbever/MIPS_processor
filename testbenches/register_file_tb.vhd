@@ -104,11 +104,11 @@ BEGIN
 
 	-- test with zero
 		Read_reg_1 <= (others => '0'); 
-		assert Read_data_1 = X"00000000" report "Incorrect value at test with zero";
 		Read_reg_2 <= (others => '0');
+
+		wait for clk_period*2;	
 		assert Read_data_2 = X"00000000" report "Incorrect value at test with zero";
-
-
+		assert Read_data_1 = X"00000000" report "Incorrect value at test with zero";
 		wait for clk_period*10;
 
 	-- write a value into register one	
