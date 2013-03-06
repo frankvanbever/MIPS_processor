@@ -104,9 +104,10 @@ BEGIN
 
 	-- test with zero
 	Read_reg_1 <= (others => '0'); 
-	assert Read_data_1 = X"00000000" report "This shit aint right";
+	assert Read_data_1 = X"00000000" report "Incorrect value at test with zero";
 	Read_reg_2 <= (others => '0');
-	assert Read_data_2 = X"00000000" report "This shit aint right";
+	assert Read_data_2 = X"00000000" report "Incorrect value at test with zero";
+
 	
 	wait for clk_period*10;
 
