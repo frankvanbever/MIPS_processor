@@ -20,7 +20,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_ARITH.all;
-use IEEE.std_logic_unsigned.all;
+use IEEE.STD_LOGIC_unsigned.all;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -38,10 +38,10 @@ entity ALU is
            ALU_Control_In : in  STD_LOGIC_VECTOR (3 downto 0)
 			  );
 end ALU;
-		 
 architecture Behavioral of ALU is
-		variable Result: Std_logic_vector (31 downto 0);
+ shared variable Result: Std_logic_vector (31 downto 0);
 begin
+		
 		ALU_Result_Calc: process(ALU_Input_1,ALU_Input_2,ALU_Control_In)
 		begin
 		case ALU_Control_In is
@@ -49,10 +49,17 @@ begin
 			when "0001" => Result := ALU_Input_1 OR ALU_Input_2;
 			when "0010" => Result := ALU_Input_1 + ALU_Input_2;
 			when "0110" => Result := ALU_Input_1 - ALU_Input_2;
-			when "0111" => (Result := ALU_Input_1 < ALU_Input_2);
-			when "1100" => Result := ALU_Input_1 NOR ALU_Input_2;
-			WHEN OTHERS => Result := "0";
-			end case;
+			when "0111" => Result := ALU_Input_1 - ALU_Input_2;
+			when others => Result := X"00000000";
+		end case;
+		if(ALU_Control_In="0111")then
+			if(Result<0) then
+				Result:=X"00000001";
+			else
+				Result:=X"00000000";
+			end if;
+		end if;
+			
 		if(Result=X"00000000")then
 			ALU_Zero<='1';
 		else
