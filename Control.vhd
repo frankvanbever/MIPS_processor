@@ -47,7 +47,7 @@ architecture Behavioral of Control is
 
 begin
 
-	Control_out: process(Instruction)
+	Control_out: process(Instruction,Instruction_funct)
 		begin
 		case Instruction is
 			when "000000" => --R-format instruction
