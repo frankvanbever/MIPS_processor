@@ -31,9 +31,9 @@ use IEEE.std_logic_unsigned.all;
 --use UNISIM.VComponents.all;
 
 entity ALU_Control is
-    Port ( 	ALU_OP : in STD_logic_vector(1 downto 0); 			
-				ALU_Funct_In : in  STD_LOGIC_VECTOR (5 downto 0);
-				ALU_Control_out : out  STD_LOGIC_VECTOR (3 downto 0)
+    Port ( 	ALU_OP : in STD_logic_vector(1 downto 0); 					--Opcode from controller
+				ALU_Funct_In : in  STD_LOGIC_VECTOR (5 downto 0);			--6 bits coming from instruction
+				ALU_Control_out : out  STD_LOGIC_VECTOR (3 downto 0)		--Output that goes to alu
 			  );
 end ALU_Control;
 
@@ -41,22 +41,22 @@ architecture Behavioral of ALU_Control is
 begin
 	ALU_Control_Output: process(ALU_OP,ALU_Funct_In)
 	begin
-			if (ALU_OP="00") then
-				ALU_Control_Out<="0010";
-			elsif (ALU_OP="01") then
-				ALU_Control_Out<="0110";
+			if (ALU_OP="00") then				-- load/store functions
+				ALU_Control_Out<="0010";		-- set to add to calculate adress
+			elsif (ALU_OP="01") then			-- branch on equal
+				ALU_Control_Out<="0110";		-- set to substract
 			
-			elsif (ALU_OP="10") then
+			elsif (ALU_OP="10") then			-- R-type instruction
 				 CASE ALU_Funct_In IS
-					WHEN  "100000"  =>  ALU_Control_Out <= "0010";
-					WHEN  "100010"  =>  ALU_Control_Out <= "0110";
-					WHEN  "100100"  =>  ALU_Control_Out <= "0000";
-					WHEN  "100101"  =>  ALU_Control_Out <= "0001";
-					WHEN  "101010"  =>  ALU_Control_Out <= "0111";
-					WHEN OTHERS =>  ALU_Control_Out <= "1111";
+					WHEN  "100000"  =>  ALU_Control_Out <= "0010";	--add
+					WHEN  "100010"  =>  ALU_Control_Out <= "0110";	--substract
+					WHEN  "100100"  =>  ALU_Control_Out <= "0000";	--AND
+					WHEN  "100101"  =>  ALU_Control_Out <= "0001";	--OR
+					WHEN  "101010"  =>  ALU_Control_Out <= "0111";	--slt
+					WHEN OTHERS =>  ALU_Control_Out <= "1111";		--error value
 					END CASE;
 			 else
-				ALU_Control_Out<="1111"; --error
+				ALU_Control_Out<="1111"; --error value
 			end if;	
 	end process ALU_Control_Output;
 
