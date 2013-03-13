@@ -24,7 +24,7 @@ architecture behavioral of sign_extend_tb is
 
 	signal tb_inst_in : std_logic_vector(15 downto 0);
 	signal tb_inst_out : std_logic_vector(31 downto 0);
-	
+
 	signal clk : std_logic; 
 
 	constant clk_period : time := 10 ns;
@@ -47,11 +47,19 @@ begin
 	stim_proc : process
 	begin
 		wait for 100 ns;
-		tb_inst_in <= "1111111111111111";
+
+		-- test 1
+		tb_inst_in <= X"FFFF";
 		wait until rising_edge(clk);
-		assert tb_inst_out = "00000000000000001111111111111111";
+		assert tb_inst_out = X"FFFFFFFF" report "error at test 1";
+
+		-- test 2
 		wait for clk_period;
-		tb_inst_in <= "0000000000000000";
+		tb_inst_in <= X"0000";
+		wait until rising_edge(clk);
+		assert tb_inst_out = X"00000000" report "error at test 2";
+
+		
 		wait;
 	end process;
 
