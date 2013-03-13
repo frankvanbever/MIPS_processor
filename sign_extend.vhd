@@ -20,7 +20,7 @@ architecture behavioral of sign_extend is
 	signal sign_bit : std_logic;
 	
 begin
-	sign_bit <= instruction_in(31); -- determine last bit
+	sign_bit <= instruction_in(15); -- determine last bit
 	instruction_out(15 downto 0) <= instruction_in;
 	instruction_out(31 downto 16) <= (others => sign_bit);
 

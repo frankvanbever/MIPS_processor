@@ -50,13 +50,13 @@ begin
 
 		-- test 1: test with sign bit 1
 		tb_inst_in <= X"FFFF";
-		wait until rising_edge(clk);
+		wait for clk_period; 
 		assert tb_inst_out = X"FFFFFFFF" report "error at test 1";
 
 		-- test 2: test with sign bit 0
 		wait for clk_period;
 		tb_inst_in <= X"0000";
-		wait until rising_edge(clk);
+		wait for clk_period;
 		assert tb_inst_out = X"00000000" report "error at test 2";
 
 		
