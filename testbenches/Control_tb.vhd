@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- Company: 
 -- Engineer:
---
+-- 
 -- Create Date:   16:24:09 03/13/2013
 -- Design Name:   
 -- Module Name:   /home/steven/Documenten/Codes/pcarch/MIPSmodules/Control_tb.vhd
