@@ -18,7 +18,7 @@ entity jump_adder is
 
 
 	-- output vectors
-		    jmp_adress : in std_logic_vector(31 downto 0); -- adress to which is jumped
+		    jmp_adress : out std_logic_vector(31 downto 0) -- adress to which is jumped
 
 
 );
@@ -29,10 +29,11 @@ end jump_adder;
 
 architecture behavioral of jump_adder is
 
+begin
 	jmp_adder_proc : process(clk)
 	begin
 		if clk'event and clk = '1' then
-			jmp_adress <= instruction + (jmp_offset sla 2);
+			jmp_adress <= instruction + to_stdlogicvector(to_bitvector(jmp_offset)sla 2);
 		end if;
 	end process;
 end behavioral;
