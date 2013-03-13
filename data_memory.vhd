@@ -11,18 +11,19 @@ use ieee.std_logic_unsigned.all;
 entity data_memory is
 port(
 	-- input signals	
-	clk : in std_logic;
+	clk : in std_logic; -- clock
 	
 	-- control signals
-	MemWrite : in std_logic;
-	MemRead : in std_logic;
+	MemWrite : in std_logic; -- write enable
+	MemRead : in std_logic; -- read enable
+	-- deze signalen zijn mutueel exclusief!! Lezen en Schrijven kunnen niet tegelijk.
 
 	-- input vectors
-	adress : in std_logic_vector(31 downto 0);
-	write_data : in std_logic_vector(31 downto 0);
+	adress : in std_logic_vector(31 downto 0); -- adres bus signaal
+	write_data : in std_logic_vector(31 downto 0); -- data die weggeschreven dient te worden
 
 	-- output vectors
-	read_data : out std_logic_vector(31 downto 0)
+	read_data : out std_logic_vector(31 downto 0) -- data die men uitleest
 	);
 
 end data_memory;
@@ -100,7 +101,14 @@ shared variable dataMem : memory_array :=
 	 X"00000000");
 
 	 begin --behavioral
-	 	data_mem_proc : process(clk)
+
+	 	---------------------------------------------------------------------------------------------------------------
+		-- proces dat het geheugen aantsuurt
+		-- indien MemWrite 0 is en MemRead 1 is wordt de waarde op adres op de read_data output gezet
+		-- indien de MemWrite 1 is en MemRead 0 is wordt de waarde op write_data geschreven in het register met adress
+		---------------------------------------------------------------------------------------------------------------
+		
+		data_mem_proc : process(clk)
 		begin
 			if rising_edge(clk) then
 				if MemRead = '1' and MemWrite = '0' then
