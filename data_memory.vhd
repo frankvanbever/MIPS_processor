@@ -1,5 +1,8 @@
 -- Frank Vanbever 06/03/13
-
+-------------------------------------------------------------------------------
+--! @file
+--! @brief Data Memory implementation for a MIPS processor
+-------------------------------------------------------------------------------
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -7,28 +10,41 @@ use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
 
-
+-------------------------------------------------------------------------------
+--! Data memory implementation for a MIPS processor. Allows storage for 64 words currently.
+-------------------------------------------------------------------------------
 entity data_memory is
 port(
 	-- input signals	
 	clk : in std_logic; -- clock
 	
 	-- control signals
-	MemWrite : in std_logic; -- write enable
-	MemRead : in std_logic; -- read enable
-	-- deze signalen zijn mutueel exclusief!! Lezen en Schrijven kunnen niet tegelijk.
+        --! Write enable signal. Warning: mutually exclusive with MemRead!
+        MemWrite : in std_logic;
+        --! Read enable signal. Warning: mutually exclusive with MemWrite!
+	MemRead : in std_logic;
 
 	-- input vectors
-	adress : in std_logic_vector(31 downto 0); -- adres bus signaal
-	write_data : in std_logic_vector(31 downto 0); -- data die weggeschreven dient te worden
+        --! Adress from which the value should be read or to which it should be
+        --! written
+	adress : in std_logic_vector(31 downto 0);
 
-	-- output vectors
-	read_data : out std_logic_vector(31 downto 0) -- data die men uitleest
+        --! Data to be written at the given adress in write mode
+	write_data : in std_logic_vector(31 downto 0);
+
+	--! Data to be read from the given adress in read mode
+	read_data : out std_logic_vector(31 downto 0)
 	);
 
 end data_memory;
 
 
+-------------------------------------------------------------------------------
+--! @brief The architecture of the data memory is based on an array of 64
+--! 32-bit words
+--! @detailed MemWrite and MemRead are mutually exclusive, only one can be 1 at
+--! a time. This is a problem that needs to be adressed.
+-------------------------------------------------------------------------------
 architecture behavioral of data_memory is
 
 subtype word is std_logic_vector(31 downto 0);
@@ -102,12 +118,12 @@ shared variable dataMem : memory_array :=
 
 	 begin --behavioral
 
-	 	---------------------------------------------------------------------------------------------------------------
-		-- proces dat het geheugen aantsuurt
-		-- indien MemWrite 0 is en MemRead 1 is wordt de waarde op adres op de read_data output gezet
-		-- indien de MemWrite 1 is en MemRead 0 is wordt de waarde op write_data geschreven in het register met adress
-		---------------------------------------------------------------------------------------------------------------
-		
+	 	
+		---------------------------------------------------------------
+                --! process that governs reading from or writing to the memory.
+                --! Every clockcycle the proces sees in which mode it is and
+                --! reads or writes values accordingly.
+                ---------------------------------------------------------------
 		data_mem_proc : process(clk)
 		begin
 			if rising_edge(clk) then

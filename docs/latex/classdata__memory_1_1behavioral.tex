@@ -1,0 +1,51 @@
+\hypertarget{classdata__memory_1_1behavioral}{\section{behavioral \-Architecture \-Reference}
+\label{classdata__memory_1_1behavioral}\index{behavioral@{behavioral}}
+}
+
+
+\-The architecture of the data memory is based on an array of 64 32-\/bit words  \-Mem\-Write and \-Mem\-Read are mutually exclusive, only one can be 1 at a time. \-This is a problem that needs to be adressed.  
+
+
+\*
+\*
+\subsection*{\-Processes}
+ \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdata__memory_1_1behavioral_ac2cd56108b347ccbbc8e30b2581e8080}{data\-\_\-mem\-\_\-proc}{\bfseries  ( {\bfseries clk  } )}
+\end{DoxyCompactItemize}
+\subsection*{\-Types}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classdata__memory_1_1behavioral_ac31cac8abdfb8b066dcf91fe2b778136}{{\bfseries \hyperlink{classdata__memory_1_1behavioral_ac31cac8abdfb8b066dcf91fe2b778136}{memory\-\_\-array}{\bfseries array (  0    to    63  )  of word }} }\label{classdata__memory_1_1behavioral_ac31cac8abdfb8b066dcf91fe2b778136}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Subtypes}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classdata__memory_1_1behavioral_a308660f491ef67a20defcc591dfcef4b}{\hyperlink{classdata__memory_1_1behavioral_a308660f491ef67a20defcc591dfcef4b}{word} {\bfseries std\-\_\-logic\-\_\-vector (   31    downto    0  ) } }\label{classdata__memory_1_1behavioral_a308660f491ef67a20defcc591dfcef4b}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Shared \-Variables}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classdata__memory_1_1behavioral_a2600aba194e7d93337116c95534d00ac}{\hyperlink{classdata__memory_1_1behavioral_a2600aba194e7d93337116c95534d00ac}{data\-Mem} {\bfseries memory\-\_\-array  \-:=  (  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{} ,  \-X \char`\"{} 00000000 \char`\"{}  ) } }\label{classdata__memory_1_1behavioral_a2600aba194e7d93337116c95534d00ac}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-The architecture of the data memory is based on an array of 64 32-\/bit words  \-Mem\-Write and \-Mem\-Read are mutually exclusive, only one can be 1 at a time. \-This is a problem that needs to be adressed. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classdata__memory_1_1behavioral_ac2cd56108b347ccbbc8e30b2581e8080}{\index{data\-\_\-memory\-::behavioral@{data\-\_\-memory\-::behavioral}!data\-\_\-mem\-\_\-proc@{data\-\_\-mem\-\_\-proc}}
+\index{data\-\_\-mem\-\_\-proc@{data\-\_\-mem\-\_\-proc}!data_memory::behavioral@{data\-\_\-memory\-::behavioral}}
+\subsubsection[{data\-\_\-mem\-\_\-proc}]{\setlength{\rightskip}{0pt plus 5cm} {\bfseries  } data\-\_\-mem\-\_\-proc(
+\begin{DoxyParamCaption}
+\item[{}]{{\bfseries clk  }  {\em }}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}\-Process\mbox{]}}}}\label{classdata__memory_1_1behavioral_ac2cd56108b347ccbbc8e30b2581e8080}
+process that governs reading from or writing to the memory. \-Every clockcycle the proces sees in which mode it is and reads or writes values accordingly. 
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{data__memory_8vhd}{data\-\_\-memory.\-vhd}\end{DoxyCompactItemize}
