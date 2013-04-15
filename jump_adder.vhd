@@ -6,34 +6,43 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
 
+
+-------------------------------------------------------------------------------
+--! Adder to calculate adresses for jumps
+-------------------------------------------------------------------------------
 entity jump_adder is
-	port(
+  port(
 
-		    -- clock input signal
-		    clk : in std_logic;
+    -- clock input signal
+    clk : in std_logic;
 
-		    -- input vectors
-		    instruction : in std_logic_vector(31 downto 0); -- program counter value
-		    jmp_offset : in std_logic_vector(31 downto 0); -- amount by which the program counter is shifted
-
-
-		    -- output vectors
-		    jmp_adress : out std_logic_vector(31 downto 0) -- adress to which is jumped
+    -- input vectors
+    --! Current value of the PC
+    instruction : in std_logic_vector(31 downto 0);
+    --! Amount by which the current PC should be shifted
+    jmp_offset  : in std_logic_vector(31 downto 0);
 
 
-	    );
+    -- output vectors
+    --! New value for the program counter
+    jmp_adress : out std_logic_vector(31 downto 0)
+
+
+    );
 
 
 end jump_adder;
 
-
+-------------------------------------------------------------------------------
+--! The architecture of this component is trivial, it adds 2 values together.
+-------------------------------------------------------------------------------
 architecture behavioral of jump_adder is
 
-	signal jmp_offset_shifted : std_logic_vector(31 downto 0);
+  signal jmp_offset_shifted : std_logic_vector(31 downto 0);
 begin
-			jmp_offset_shifted(31 downto 2) <= jmp_offset(29 downto 0);
-			jmp_offset_shifted(1 downto 0) <= (others => '0');
-			jmp_adress <= instruction + jmp_offset_shifted;
+  jmp_offset_shifted(31 downto 2) <= jmp_offset(29 downto 0);
+  jmp_offset_shifted(1 downto 0)  <= (others => '0');
+  jmp_adress                      <= instruction + jmp_offset_shifted;
 end behavioral;
 
 

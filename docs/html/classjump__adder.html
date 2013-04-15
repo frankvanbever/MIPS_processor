@@ -85,11 +85,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="jump_adder" -->
+<p>Adder to calculate adresses for jumps.  
+ <a href="classjump__adder.html#details">More...</a></p>
+
 <p><a href="classjump__adder-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Entities</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjump__adder_1_1behavioral.html">behavioral</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The architecture of this component is trivial, it adds 2 values together.  <a href="classjump__adder_1_1behavioral.html#details">More...</a><br/></td></tr>
 <br/>
 <br/>
 <tr><td colspan="2"><h2><a name="Ports"></a>
@@ -98,12 +102,17 @@ Ports</h2></td></tr>
 <a class="el" href="classjump__adder.html#af860a3a86b5cfd289a189d1220f4648d">clk</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a298266092b29f7f7afb088eecb4e46c1"></a><!-- doxytag: member="jump_adder::instruction" ref="a298266092b29f7f7afb088eecb4e46c1" args="std_logic_vector%(%31%%%downto%%%0%)" -->
 <a class="el" href="classjump__adder.html#a298266092b29f7f7afb088eecb4e46c1">instruction</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Current value of the PC. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83702b6a2e8dc32a0ac5cfe7e8cafd61"></a><!-- doxytag: member="jump_adder::jmp_offset" ref="a83702b6a2e8dc32a0ac5cfe7e8cafd61" args="std_logic_vector%(%31%%%downto%%%0%)" -->
 <a class="el" href="classjump__adder.html#a83702b6a2e8dc32a0ac5cfe7e8cafd61">jmp_offset</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount by which the current PC should be shifted. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad176de343f2a06617f92deabbbbf6256"></a><!-- doxytag: member="jump_adder::jmp_adress" ref="ad176de343f2a06617f92deabbbbf6256" args="std_logic_vector%(%31%%%downto%%%0%)" -->
 <a class="el" href="classjump__adder.html#ad176de343f2a06617f92deabbbbf6256">jmp_adress</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">New value for the program counter. <br/></td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Adder to calculate adresses for jumps. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>jump_adder.vhd</li>
 </ul>
 </div><!-- contents -->
@@ -124,7 +133,7 @@ Ports</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 15 2013 18:14:42 for ROLLMIPS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 15 2013 18:21:38 for ROLLMIPS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

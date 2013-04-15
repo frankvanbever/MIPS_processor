@@ -1,11 +1,16 @@
 \hypertarget{classjump__adder}{\section{jump\-\_\-adder \-Entity \-Reference}
 \label{classjump__adder}\index{jump\-\_\-adder@{jump\-\_\-adder}}
 }
+
+
+\-Adder to calculate adresses for jumps.  
+
+
 \subsection*{\-Entities}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classjump__adder_1_1behavioral}{behavioral} architecture
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \-The architecture of this component is trivial, it adds 2 values together. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \*
 \*
 \subsection*{\-Ports}
@@ -16,14 +21,17 @@
 \item 
 \hypertarget{classjump__adder_a298266092b29f7f7afb088eecb4e46c1}{\hyperlink{classjump__adder_a298266092b29f7f7afb088eecb4e46c1}{instruction}  {\bfseries {\bfseries in }} {\bfseries std\-\_\-logic\-\_\-vector (   31    downto    0  ) } }\label{classjump__adder_a298266092b29f7f7afb088eecb4e46c1}
 
-\item 
+\begin{DoxyCompactList}\small\item\em \-Current value of the \-P\-C. \end{DoxyCompactList}\item 
 \hypertarget{classjump__adder_a83702b6a2e8dc32a0ac5cfe7e8cafd61}{\hyperlink{classjump__adder_a83702b6a2e8dc32a0ac5cfe7e8cafd61}{jmp\-\_\-offset}  {\bfseries {\bfseries in }} {\bfseries std\-\_\-logic\-\_\-vector (   31    downto    0  ) } }\label{classjump__adder_a83702b6a2e8dc32a0ac5cfe7e8cafd61}
 
-\item 
+\begin{DoxyCompactList}\small\item\em \-Amount by which the current \-P\-C should be shifted. \end{DoxyCompactList}\item 
 \hypertarget{classjump__adder_ad176de343f2a06617f92deabbbbf6256}{\hyperlink{classjump__adder_ad176de343f2a06617f92deabbbbf6256}{jmp\-\_\-adress}  {\bfseries {\bfseries out }} {\bfseries std\-\_\-logic\-\_\-vector (   31    downto    0  ) } }\label{classjump__adder_ad176de343f2a06617f92deabbbbf6256}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \-New value for the program counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{\-Detailed \-Description}
+\-Adder to calculate adresses for jumps. 
 
 \-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
