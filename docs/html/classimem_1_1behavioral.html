@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>MIPS_Processor: behavioral Architecture  Reference</title>
+<title>ROLLMIPS: behavioral Architecture  Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -29,7 +29,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">MIPS_Processor
+   <div id="projectname">ROLLMIPS
    &#160;<span id="projectnumber">0.0.1</span>
    </div>
    <div id="projectbrief">An implementation of a MIPS processor</div>
@@ -105,15 +105,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="imem::behavioral" -->
+<p>The architecture of the instruction memory is based on an array of 32-bit words.  
+ <a href="classimem_1_1behavioral.html#details">More...</a></p>
+
 <p><a href="classimem_1_1behavioral-members.html">List of all members.</a></p>
 <br/>
 <br/>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="Processes"></a>
 Processes</h2></td></tr>
- <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b80c5ce6b239f1f87f4a5ab0892fe79"></a><!-- doxytag: member="imem::behavioral::MemoryPC" ref="a8b80c5ce6b239f1f87f4a5ab0892fe79" args="PC" -->
-<a class="el" href="classimem_1_1behavioral.html#a8b80c5ce6b239f1f87f4a5ab0892fe79">MemoryPC</a>&#160;</td><td class="memItemRight" valign="bottom"><b> ( <b><span class="vhdlchar">PC</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span></b> )</b></td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classimem_1_1behavioral.html#a8b80c5ce6b239f1f87f4a5ab0892fe79">MemoryPC</a>&#160;</td><td class="memItemRight" valign="bottom"><b> ( <b><b><a class="el" href="classimem.html#ad1a221c09af97e0f0a04247472ab8016">pc</a></b> <span class="vhdlchar"> </span><span class="vhdlchar"> </span></b> )</b></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>The architecture of the instruction memory is based on an array of 32-bit words. </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a8b80c5ce6b239f1f87f4a5ab0892fe79"></a><!-- doxytag: member="imem::behavioral::MemoryPC" ref="a8b80c5ce6b239f1f87f4a5ab0892fe79" args="PC" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <b><span class="vhdlchar"> </span></b> MemoryPC          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><b><b><a class="el" href="classimem.html#ad1a221c09af97e0f0a04247472ab8016">pc</a></b> <span class="vhdlchar"> </span><span class="vhdlchar"> </span></b>  <em></em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [Process]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>The MemoryPC process looks at the program counter and outputs the correct instruction. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>IMem.vhd</li>
 </ul>
@@ -135,7 +161,7 @@ Processes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 15 2013 18:02:09 for MIPS_Processor by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 15 2013 18:14:42 for ROLLMIPS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

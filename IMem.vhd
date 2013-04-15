@@ -6,7 +6,7 @@
 -- Author     : Frank Vanbever  <frank@neuromancer>
 -- Company    : 
 -- Created    : 2013-02-13
--- Last update: 2013-02-13
+-- Last update: 2013-04-15
 -- Platform   : 
 -- Standard   : VHDL'87
 -------------------------------------------------------------------------------
@@ -24,17 +24,31 @@ use IEEE.STD_LOGIC_1164.all;
 use IEEE.std_logic_arith.all;
 use IEEE.std_logic_unsigned.all;
 
+
+-------------------------------------------------------------------------------
+--! Instruction memory implementation for MIPS processor
+-------------------------------------------------------------------------------
 entity imem is
   
   port (
-    pc          : in  std_logic_vector(31 downto 0);   -- program counter
-    Instruction : out std_logic_vector(31 downto 0));  -- outputted instruction
+    --! Program counter input
+    pc          : in  std_logic_vector(31 downto 0);
+    --! Instruction output
+    Instruction : out std_logic_vector(31 downto 0));
 
 end imem;
 
-
+-------------------------------------------------------------------------------
+--! The architecture of the instruction memory is based on an array of 32-bit words.
+-------------------------------------------------------------------------------
 architecture behavioral of imem is
 begin
+
+
+  ----------------------------------------------------------------------------
+  --! The MemoryPC process looks at the program counter and outputs the correct
+  --! instruction.
+  -----------------------------------------------------------------------------
   MemoryPC : process (PC)
     subtype  word is std_logic_vector(31 downto 0);
     type     memory is array (0 to 7) of word;
