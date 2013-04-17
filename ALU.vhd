@@ -17,36 +17,38 @@
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
+--! Use standard library
 library IEEE;
+--! use logic elements
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_ARITH.all;
 use IEEE.STD_LOGIC_unsigned.all;
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+--! ALU of the MIPS processor
 
+--! this is a 32-bit alu with 2 32-bit inputs and a 32 bit output, it also has a zero output bit
+--! it needs 4 control bits from the ALU control to function
 entity ALU is
-    Port ( ALU_Input_1 : in  STD_LOGIC_VECTOR (31 downto 0);		--alu input 1 (rs)
-           ALU_Input_2 : in  STD_LOGIC_VECTOR (31 downto 0);		--alu input 2 (rt)
-           ALU_Zero : out  STD_LOGIC;										--zero output
-           ALU_Result : out  STD_LOGIC_VECTOR (31 downto 0);		--32 bit output alu
-           ALU_Control_In : in  STD_LOGIC_VECTOR (3 downto 0)		--input from alu control
+    Port ( ALU_Input_1 : in  STD_LOGIC_VECTOR (31 downto 0);		--! alu input 1 (rs)
+           ALU_Input_2 : in  STD_LOGIC_VECTOR (31 downto 0);		--! alu input 2 (rt)
+           ALU_Zero : out  STD_LOGIC;					--! alu zero output
+           ALU_Result : out  STD_LOGIC_VECTOR (31 downto 0);		--! alu 32 bit output
+           ALU_Control_In : in  STD_LOGIC_VECTOR (3 downto 0)		--! input from alu control
 			  );
 end ALU;
+
+--! @brief This is a 32 bit ALU for the MIPS processor
+--! @details the ALU is able to do following functions: AND,OR, add, substract, set on less then, NOR (see ALU_Control)
+--! @details the zero output bit is set if the result of the ALU is 0
 architecture Behavioral of ALU is
- shared variable Result: Std_logic_vector (31 downto 0);		--Register to store Result of alu temporary
+ shared variable Result: Std_logic_vector (31 downto 0);		--! Register to store Result of alu
 begin
 		
 		ALU_Result_Calc: process(ALU_Input_1,ALU_Input_2,ALU_Control_In)
 		begin
 		case ALU_Control_In is
 			when "0000" => Result := ALU_Input_1 AND ALU_Input_2;		-- AND
-			when "0001" => Result := ALU_Input_1 OR ALU_Input_2;		--	OR
+			when "0001" => Result := ALU_Input_1 OR ALU_Input_2;		-- OR
 			when "0010" => Result := ALU_Input_1 + ALU_Input_2;		-- add
 			when "0110" => Result := ALU_Input_1 - ALU_Input_2;		-- substract
 			when "0111" => Result := ALU_Input_1 - ALU_Input_2;		-- set on les then calculation

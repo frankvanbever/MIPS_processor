@@ -17,26 +17,32 @@
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
+--! Use standard library
 library IEEE;
+--! use logic elements
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.all;
 use IEEE.std_logic_unsigned.all;
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+--! ALU_Control of the MIPS processor
 
+--! the ALU_Control takes as input the 6 first bitS from the instruction and the 2 bits code from the controller. It outputs a 4 bits code to control the ALU
 entity ALU_Control is
-    Port ( 	ALU_OP : in STD_logic_vector(1 downto 0); 					--Opcode from controller
-				ALU_Funct_In : in  STD_LOGIC_VECTOR (5 downto 0);			--6 bits coming from instruction
-				ALU_Control_out : out  STD_LOGIC_VECTOR (3 downto 0)		--Output that goes to alu
+    Port ( 			ALU_OP : in STD_logic_vector(1 downto 0); 			--! Opcode from controller
+				ALU_Funct_In : in  STD_LOGIC_VECTOR (5 downto 0);	        --! funt_in from instruction (first 6 bits)
+				ALU_Control_out : out  STD_LOGIC_VECTOR (3 downto 0)		--! alu_control output
 			  );
 end ALU_Control;
 
+--! @brief This is the ALU control that generates the 4 control bits for the ALU
+--! @details opcode 00: load/store functions (add for calculating adress)
+--! @details opcode 01: branch on equal (substract for comparing inputs)
+--! @details opcode 10: R-type instruction (depends on ALU_Funct_In)
+--! @details ALU_Funct_In 100000: add
+--! @details ALU_Funct_In 100000: substract
+--! @details ALU_Funct_In 100000: AND
+--! @details ALU_Funct_In 100000: OR
+--! @details ALU_Funct_In 100000: set less then
 architecture Behavioral of ALU_Control is
 begin
 	ALU_Control_Output: process(ALU_OP,ALU_Funct_In)
