@@ -24,10 +24,7 @@ use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_ARITH.all;
 use IEEE.STD_LOGIC_unsigned.all;
 
---! ALU of the MIPS processor
-
---! this is a 32-bit alu with 2 32-bit inputs and a 32 bit output, it also has a zero output bit
---! it needs 4 control bits from the ALU control to function
+--! this is a 32-bit alu with 2 32-bit inputs and a 32 bit output, it also has a zero output bit, it needs 4 control bits from the ALU control to function
 entity ALU is
     Port ( ALU_Input_1 : in  STD_LOGIC_VECTOR (31 downto 0);		--! alu input 1 (rs)
            ALU_Input_2 : in  STD_LOGIC_VECTOR (31 downto 0);		--! alu input 2 (rt)

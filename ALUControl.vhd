@@ -24,8 +24,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.all;
 use IEEE.std_logic_unsigned.all;
 
---! ALU_Control of the MIPS processor
-
 --! the ALU_Control takes as input the 6 first bitS from the instruction and the 2 bits code from the controller. It outputs a 4 bits code to control the ALU
 entity ALU_Control is
     Port ( 			ALU_OP : in STD_logic_vector(1 downto 0); 			--! Opcode from controller

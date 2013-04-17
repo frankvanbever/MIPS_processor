@@ -21,7 +21,6 @@
 library IEEE;
 --! use logic elements
 use IEEE.STD_LOGIC_1164.ALL;
---! Controller  of the MIPS processor
 
 --! sends out control signals depending on the instruction first 6 bits (FUNCT field) and the instructions 26-31 bits(?)
 entity Control is
@@ -45,9 +44,6 @@ end Control;
 --! @details 100011:(0,1,1,1,1,0,0,0,00) --> load word instruction
 --! @details 101011:(0,1,0,0,0,1,0,0,00) --> save word instruction
 --! @details 000100:(0,0,0,0,0,0,1/0,0/1,01)--> branch equal/branch not equal instruction
-
-architecture Behavioral of ALU_Control is
-
 architecture Behavioral of Control is
 
 begin
