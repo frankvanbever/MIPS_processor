@@ -1,16 +1,43 @@
 \hypertarget{class_control_1_1_behavioral}{\section{\-Behavioral \-Architecture \-Reference}
 \label{class_control_1_1_behavioral}\index{\-Behavioral@{\-Behavioral}}
 }
+
+
+\-This is the controller that sets the control variables.  
+
+
 \*
 \*
 \subsection*{\-Processes}
  \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_control_1_1_behavioral_acb9cc429829d2348a26239aff3f19612}{\hyperlink{class_control_1_1_behavioral_acb9cc429829d2348a26239aff3f19612}{\-Control\-\_\-out}{\bfseries  ( {\bfseries \-Instruction  ,\-Instruction\-\_\-funct } )}}\label{class_control_1_1_behavioral_acb9cc429829d2348a26239aff3f19612}
-
+\hyperlink{class_control_1_1_behavioral_acb9cc429829d2348a26239aff3f19612}{\-Control\-\_\-out}{\bfseries  ( {\bfseries {\bfseries \hyperlink{class_control_a35120c002e477a6e77c738ea1aaa5505}{\-Instruction}}   ,{\bfseries \hyperlink{class_control_a837426aa7a23a4b3f1534d7a5a47fd84}{\-Instruction\-\_\-funct}}  } )}
 \end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This is the controller that sets the control variables. 
+
+depending on function field sets (\-Reg\-Dst,\-A\-L\-U\-Src,\-Memto\-Reg,\-Reg\-Write,\-Mem\-Read,\-Branch,\-A\-L\-Uop)\-:
+
+000000\-:(1,0,0,1,0,0,0,0,10) -\/-\/$>$ \-R-\/type instruction
+
+100011\-:(0,1,1,1,1,0,0,0,00) -\/-\/$>$ load word instruction
+
+101011\-:(0,1,0,0,0,1,0,0,00) -\/-\/$>$ save word instruction
+
+000100\-:(0,0,0,0,0,0,1/0,0/1,01)-\/-\/$>$ branch equal/branch not equal instruction 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_control_1_1_behavioral_acb9cc429829d2348a26239aff3f19612}{\index{\-Control\-::\-Behavioral@{\-Control\-::\-Behavioral}!\-Control\-\_\-out@{\-Control\-\_\-out}}
+\index{\-Control\-\_\-out@{\-Control\-\_\-out}!Control::Behavioral@{\-Control\-::\-Behavioral}}
+\subsubsection[{\-Control\-\_\-out}]{\setlength{\rightskip}{0pt plus 5cm} {\bfseries  } \-Control\-\_\-out(
+\begin{DoxyParamCaption}
+\item[{}]{{\bfseries {\bfseries {\bf \-Instruction}}   ,{\bfseries {\bf \-Instruction\-\_\-funct}}  }  {\em }}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}\-Process\mbox{]}}}}\label{class_control_1_1_behavioral_acb9cc429829d2348a26239aff3f19612}
 
 
 \-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-\-Control.\-vhd\end{DoxyCompactItemize}
+\hyperlink{_control_8vhd}{\-Control.\-vhd}\end{DoxyCompactItemize}
