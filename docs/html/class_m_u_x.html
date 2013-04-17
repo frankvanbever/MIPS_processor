@@ -32,7 +32,7 @@
    <div id="projectname">ROLLMIPS
    &#160;<span id="projectnumber">0.0.1</span>
    </div>
-   <div id="projectbrief">An implementation of a MIPS processor</div>
+   <div id="projectbrief">MIPS processor implementation in VHDL</div>
   </td>
   
   
@@ -98,26 +98,97 @@ Entities</h2></td></tr>
 <br/>
 <tr><td colspan="2"><h2><a name="Ports"></a>
 Ports</h2></td></tr>
- <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70f7f9ef1e412f6da35c2b9e17540895"></a><!-- doxytag: member="MUX::clk" ref="a70f7f9ef1e412f6da35c2b9e17540895" args="std_logic%" -->
-<a class="el" href="class_m_u_x.html#a70f7f9ef1e412f6da35c2b9e17540895">clk</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">clock signal <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9819d657d3d033c5c4ffe99e31b79bb2"></a><!-- doxytag: member="MUX::selector" ref="a9819d657d3d033c5c4ffe99e31b79bb2" args="std_logic%" -->
-<a class="el" href="class_m_u_x.html#a9819d657d3d033c5c4ffe99e31b79bb2">selector</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">selection, 0 means output 1, 1 means output 2 <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbc4a8307f6b8e70f215db699745f990"></a><!-- doxytag: member="MUX::vector_in_1" ref="adbc4a8307f6b8e70f215db699745f990" args="std_logic_vector%(%31%%%downto%%%0%)" -->
-<a class="el" href="class_m_u_x.html#adbc4a8307f6b8e70f215db699745f990">vector_in_1</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">first input vector <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa66f7828cd4605fa3a26337c456221b1"></a><!-- doxytag: member="MUX::vector_in_2" ref="aa66f7828cd4605fa3a26337c456221b1" args="std_logic_vector%(%31%%%downto%%%0%)" -->
-<a class="el" href="class_m_u_x.html#aa66f7828cd4605fa3a26337c456221b1">vector_in_2</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">second input vector <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba4981bcab558ff1bfef133843d39d43"></a><!-- doxytag: member="MUX::vector_out" ref="aba4981bcab558ff1bfef133843d39d43" args="std_logic_vector%(%31%%%downto%%%0%)" -->
-<a class="el" href="class_m_u_x.html#aba4981bcab558ff1bfef133843d39d43">vector_out</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">output vector <br/></td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_u_x.html#a70f7f9ef1e412f6da35c2b9e17540895">clk</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">clock signal  <a href="#a70f7f9ef1e412f6da35c2b9e17540895"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_u_x.html#a9819d657d3d033c5c4ffe99e31b79bb2">selector</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">selection, 0 means output 1, 1 means output 2  <a href="#a9819d657d3d033c5c4ffe99e31b79bb2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_u_x.html#adbc4a8307f6b8e70f215db699745f990">vector_in_1</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">first input vector  <a href="#adbc4a8307f6b8e70f215db699745f990"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_u_x.html#aa66f7828cd4605fa3a26337c456221b1">vector_in_2</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">second input vector  <a href="#aa66f7828cd4605fa3a26337c456221b1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_u_x.html#aba4981bcab558ff1bfef133843d39d43">vector_out</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">output vector  <a href="#aba4981bcab558ff1bfef133843d39d43"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Generic 2:1 multiplexer. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>MUX.vhd</li>
+</div><hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a70f7f9ef1e412f6da35c2b9e17540895"></a><!-- doxytag: member="MUX::clk" ref="a70f7f9ef1e412f6da35c2b9e17540895" args="std_logic " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_m_u_x.html#a70f7f9ef1e412f6da35c2b9e17540895">clk</a> <b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b> <b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b> <code> [Port]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>clock signal </p>
+
+</div>
+</div>
+<a class="anchor" id="a9819d657d3d033c5c4ffe99e31b79bb2"></a><!-- doxytag: member="MUX::selector" ref="a9819d657d3d033c5c4ffe99e31b79bb2" args="std_logic " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_m_u_x.html#a9819d657d3d033c5c4ffe99e31b79bb2">selector</a> <b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b> <b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b> <code> [Port]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>selection, 0 means output 1, 1 means output 2 </p>
+
+</div>
+</div>
+<a class="anchor" id="adbc4a8307f6b8e70f215db699745f990"></a><!-- doxytag: member="MUX::vector_in_1" ref="adbc4a8307f6b8e70f215db699745f990" args="std_logic_vector ( 31   downto   0 )" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_m_u_x.html#adbc4a8307f6b8e70f215db699745f990">vector_in_1</a> <b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b> <b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b> <code> [Port]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>first input vector </p>
+
+</div>
+</div>
+<a class="anchor" id="aa66f7828cd4605fa3a26337c456221b1"></a><!-- doxytag: member="MUX::vector_in_2" ref="aa66f7828cd4605fa3a26337c456221b1" args="std_logic_vector ( 31   downto   0 )" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_m_u_x.html#aa66f7828cd4605fa3a26337c456221b1">vector_in_2</a> <b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b> <b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b> <code> [Port]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>second input vector </p>
+
+</div>
+</div>
+<a class="anchor" id="aba4981bcab558ff1bfef133843d39d43"></a><!-- doxytag: member="MUX::vector_out" ref="aba4981bcab558ff1bfef133843d39d43" args="std_logic_vector ( 31   downto   0 )" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_m_u_x.html#aba4981bcab558ff1bfef133843d39d43">vector_out</a> <b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b> <b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b> <code> [Port]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>output vector </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="_m_u_x_8vhd.html">MUX.vhd</a></li>
 </ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->
@@ -137,7 +208,7 @@ Ports</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 15 2013 18:44:58 for ROLLMIPS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 17 2013 14:09:02 for ROLLMIPS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

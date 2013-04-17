@@ -1,22 +1,52 @@
 \hypertarget{class_a_l_u_1_1_behavioral}{\section{\-Behavioral \-Architecture \-Reference}
 \label{class_a_l_u_1_1_behavioral}\index{\-Behavioral@{\-Behavioral}}
 }
+
+
+\-This is a 32 bit \hyperlink{class_a_l_u}{\-A\-L\-U} for the \-M\-I\-P\-S processor.  
+
+
 \*
 \*
 \subsection*{\-Processes}
  \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_a_l_u_1_1_behavioral_a9d398c4f01ad1a21234856b1403845fc}{\hyperlink{class_a_l_u_1_1_behavioral_a9d398c4f01ad1a21234856b1403845fc}{\-A\-L\-U\-\_\-\-Result\-\_\-\-Calc}{\bfseries  ( {\bfseries \-A\-L\-U\-\_\-\-Input\-\_\-1  ,\-A\-L\-U\-\_\-\-Input\-\_\-2 ,\-A\-L\-U\-\_\-\-Control\-\_\-\-In } )}}\label{class_a_l_u_1_1_behavioral_a9d398c4f01ad1a21234856b1403845fc}
-
+\hyperlink{class_a_l_u_1_1_behavioral_a9d398c4f01ad1a21234856b1403845fc}{\-A\-L\-U\-\_\-\-Result\-\_\-\-Calc}{\bfseries  ( {\bfseries {\bfseries \hyperlink{class_a_l_u_ad506dc3c4d5a49b33075dcf2ea057306}{\-A\-L\-U\-\_\-\-Input\-\_\-1}}   ,{\bfseries \hyperlink{class_a_l_u_a657f38dca67063612c1c3d9327260efd}{\-A\-L\-U\-\_\-\-Input\-\_\-2}}  ,{\bfseries \hyperlink{class_a_l_u_a160e9acd866b7a383a28d77c159bd52a}{\-A\-L\-U\-\_\-\-Control\-\_\-\-In}}  } )}
 \end{DoxyCompactItemize}
 \subsection*{\-Shared \-Variables}
  \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_a_l_u_1_1_behavioral_afc4b6c182f9d7ec900d031c30ae7fd43}{\hyperlink{class_a_l_u_1_1_behavioral_afc4b6c182f9d7ec900d031c30ae7fd43}{\-Result} {\bfseries \-Std\-\_\-logic\-\_\-vector (   31    downto    0  ) } }\label{class_a_l_u_1_1_behavioral_afc4b6c182f9d7ec900d031c30ae7fd43}
+\hyperlink{class_a_l_u_1_1_behavioral_afc4b6c182f9d7ec900d031c30ae7fd43}{\-Result} {\bfseries \-Std\-\_\-logic\-\_\-vector (   31    downto    0  ) } 
+\begin{DoxyCompactList}\small\item\em \-Register to store \-Result of alu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\end{DoxyCompactItemize}
+
+\subsection{\-Detailed \-Description}
+\-This is a 32 bit \hyperlink{class_a_l_u}{\-A\-L\-U} for the \-M\-I\-P\-S processor. 
+
+the \hyperlink{class_a_l_u}{\-A\-L\-U} is able to do following functions\-: \-A\-N\-D,\-O\-R, add, substract, set on less then, \-N\-O\-R (see \hyperlink{class_a_l_u___control}{\-A\-L\-U\-\_\-\-Control})
+
+the zero output bit is set if the result of the \hyperlink{class_a_l_u}{\-A\-L\-U} is 0 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_a_l_u_1_1_behavioral_a9d398c4f01ad1a21234856b1403845fc}{\index{\-A\-L\-U\-::\-Behavioral@{\-A\-L\-U\-::\-Behavioral}!\-A\-L\-U\-\_\-\-Result\-\_\-\-Calc@{\-A\-L\-U\-\_\-\-Result\-\_\-\-Calc}}
+\index{\-A\-L\-U\-\_\-\-Result\-\_\-\-Calc@{\-A\-L\-U\-\_\-\-Result\-\_\-\-Calc}!ALU::Behavioral@{\-A\-L\-U\-::\-Behavioral}}
+\subsubsection[{\-A\-L\-U\-\_\-\-Result\-\_\-\-Calc}]{\setlength{\rightskip}{0pt plus 5cm} {\bfseries  } \-A\-L\-U\-\_\-\-Result\-\_\-\-Calc(
+\begin{DoxyParamCaption}
+\item[{}]{{\bfseries {\bfseries {\bf \-A\-L\-U\-\_\-\-Input\-\_\-1}}   ,{\bfseries {\bf \-A\-L\-U\-\_\-\-Input\-\_\-2}}  ,{\bfseries {\bf \-A\-L\-U\-\_\-\-Control\-\_\-\-In}}  }  {\em }}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}\-Process\mbox{]}}}}\label{class_a_l_u_1_1_behavioral_a9d398c4f01ad1a21234856b1403845fc}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_a_l_u_1_1_behavioral_afc4b6c182f9d7ec900d031c30ae7fd43}{\index{\-A\-L\-U\-::\-Behavioral@{\-A\-L\-U\-::\-Behavioral}!\-Result@{\-Result}}
+\index{\-Result@{\-Result}!ALU::Behavioral@{\-A\-L\-U\-::\-Behavioral}}
+\subsubsection[{\-Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Result} {\bfseries \-Std\-\_\-logic\-\_\-vector (   31    downto    0  ) } \hspace{0.3cm}{\ttfamily  \mbox{[}\-Shared Variable\mbox{]}}}}\label{class_a_l_u_1_1_behavioral_afc4b6c182f9d7ec900d031c30ae7fd43}
+
+
+\-Register to store \-Result of alu. 
+
 
 
 \-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-\-A\-L\-U.\-vhd\end{DoxyCompactItemize}
+\hyperlink{_a_l_u_8vhd}{\-A\-L\-U.\-vhd}\end{DoxyCompactItemize}
