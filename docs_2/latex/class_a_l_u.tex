@@ -1,0 +1,78 @@
+\hypertarget{class_a_l_u}{\section{A\-L\-U Entity Reference}
+\label{class_a_l_u}\index{A\-L\-U@{A\-L\-U}}
+}
+
+
+this is a 32-\/bit alu with 2 32-\/bit inputs and a 32 bit output, it also has a zero output bit, it needs 4 control bits from the \hyperlink{class_a_l_u}{A\-L\-U} control to function  
+
+
+Inheritance diagram for A\-L\-U\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_l_u}
+\end{center}
+\end{figure}
+\subsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_l_u_1_1_behavioral}{Behavioral} architecture
+\begin{DoxyCompactList}\small\item\em This is a 32 bit \hyperlink{class_a_l_u}{A\-L\-U} for the M\-I\-P\-S processor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Ports}
+ \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_l_u_a914f203651b8887062dd7432ef37b92a}{A\-L\-U\-\_\-\-Input\-\_\-1}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} 
+\begin{DoxyCompactList}\small\item\em alu input 1 (rs) \end{DoxyCompactList}\item 
+\hyperlink{class_a_l_u_aa3b3b0b101b8269e00ade1a474bb35e0}{A\-L\-U\-\_\-\-Input\-\_\-2}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} 
+\begin{DoxyCompactList}\small\item\em alu input 2 (rt) \end{DoxyCompactList}\item 
+\hyperlink{class_a_l_u_aa94d8e6050f382eeb04dc3c7ac380f2e}{A\-L\-U\-\_\-\-Zero}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} 
+\begin{DoxyCompactList}\small\item\em alu zero output \end{DoxyCompactList}\item 
+\hyperlink{class_a_l_u_ac6d90f6d382114c0cfadc2c2cdc6559f}{A\-L\-U\-\_\-\-Result}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} 
+\begin{DoxyCompactList}\small\item\em alu 32 bit output \end{DoxyCompactList}\item 
+\hyperlink{class_a_l_u_a9ea12157ac75337610ea73ec756eca4c}{A\-L\-U\-\_\-\-Control\-\_\-\-In}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{3} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} 
+\begin{DoxyCompactList}\small\item\em input from alu control \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this is a 32-\/bit alu with 2 32-\/bit inputs and a 32 bit output, it also has a zero output bit, it needs 4 control bits from the \hyperlink{class_a_l_u}{A\-L\-U} control to function 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_a_l_u_a9ea12157ac75337610ea73ec756eca4c}{\index{A\-L\-U@{A\-L\-U}!A\-L\-U\-\_\-\-Control\-\_\-\-In@{A\-L\-U\-\_\-\-Control\-\_\-\-In}}
+\index{A\-L\-U\-\_\-\-Control\-\_\-\-In@{A\-L\-U\-\_\-\-Control\-\_\-\-In}!ALU@{A\-L\-U}}
+\subsubsection[{A\-L\-U\-\_\-\-Control\-\_\-\-In}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\-L\-U\-\_\-\-Control\-\_\-\-In} {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{3} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}}\label{class_a_l_u_a9ea12157ac75337610ea73ec756eca4c}
+
+
+input from alu control 
+
+\hypertarget{class_a_l_u_a914f203651b8887062dd7432ef37b92a}{\index{A\-L\-U@{A\-L\-U}!A\-L\-U\-\_\-\-Input\-\_\-1@{A\-L\-U\-\_\-\-Input\-\_\-1}}
+\index{A\-L\-U\-\_\-\-Input\-\_\-1@{A\-L\-U\-\_\-\-Input\-\_\-1}!ALU@{A\-L\-U}}
+\subsubsection[{A\-L\-U\-\_\-\-Input\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\-L\-U\-\_\-\-Input\-\_\-1} {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}}\label{class_a_l_u_a914f203651b8887062dd7432ef37b92a}
+
+
+alu input 1 (rs) 
+
+\hypertarget{class_a_l_u_aa3b3b0b101b8269e00ade1a474bb35e0}{\index{A\-L\-U@{A\-L\-U}!A\-L\-U\-\_\-\-Input\-\_\-2@{A\-L\-U\-\_\-\-Input\-\_\-2}}
+\index{A\-L\-U\-\_\-\-Input\-\_\-2@{A\-L\-U\-\_\-\-Input\-\_\-2}!ALU@{A\-L\-U}}
+\subsubsection[{A\-L\-U\-\_\-\-Input\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\-L\-U\-\_\-\-Input\-\_\-2} {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}}\label{class_a_l_u_aa3b3b0b101b8269e00ade1a474bb35e0}
+
+
+alu input 2 (rt) 
+
+\hypertarget{class_a_l_u_ac6d90f6d382114c0cfadc2c2cdc6559f}{\index{A\-L\-U@{A\-L\-U}!A\-L\-U\-\_\-\-Result@{A\-L\-U\-\_\-\-Result}}
+\index{A\-L\-U\-\_\-\-Result@{A\-L\-U\-\_\-\-Result}!ALU@{A\-L\-U}}
+\subsubsection[{A\-L\-U\-\_\-\-Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\-L\-U\-\_\-\-Result} {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}}\label{class_a_l_u_ac6d90f6d382114c0cfadc2c2cdc6559f}
+
+
+alu 32 bit output 
+
+\hypertarget{class_a_l_u_aa94d8e6050f382eeb04dc3c7ac380f2e}{\index{A\-L\-U@{A\-L\-U}!A\-L\-U\-\_\-\-Zero@{A\-L\-U\-\_\-\-Zero}}
+\index{A\-L\-U\-\_\-\-Zero@{A\-L\-U\-\_\-\-Zero}!ALU@{A\-L\-U}}
+\subsubsection[{A\-L\-U\-\_\-\-Zero}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\-L\-U\-\_\-\-Zero} {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}}\label{class_a_l_u_aa94d8e6050f382eeb04dc3c7ac380f2e}
+
+
+alu zero output 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+documenten/\-Codes/\-M\-I\-P\-S\-\_\-processor/\hyperlink{_a_l_u_8vhd}{A\-L\-U.\-vhd}\end{DoxyCompactItemize}
