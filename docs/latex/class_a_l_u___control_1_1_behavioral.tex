@@ -1,15 +1,51 @@
 \hypertarget{class_a_l_u___control_1_1_behavioral}{\section{\-Behavioral \-Architecture \-Reference}
 \label{class_a_l_u___control_1_1_behavioral}\index{\-Behavioral@{\-Behavioral}}
 }
+
+
+\-This is the \hyperlink{class_a_l_u}{\-A\-L\-U} control that generates the 4 control bits for the \hyperlink{class_a_l_u}{\-A\-L\-U}.  
+
+
 \*
 \*
 \subsection*{\-Processes}
  \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_a_l_u___control_1_1_behavioral_a86f70441267014ffedcb802b679dd560}{\hyperlink{class_a_l_u___control_1_1_behavioral_a86f70441267014ffedcb802b679dd560}{\-A\-L\-U\-\_\-\-Control\-\_\-\-Output}{\bfseries  ( {\bfseries \-A\-L\-U\-\_\-\-O\-P  ,\-A\-L\-U\-\_\-\-Funct\-\_\-\-In } )}}\label{class_a_l_u___control_1_1_behavioral_a86f70441267014ffedcb802b679dd560}
+\hypertarget{class_a_l_u___control_1_1_behavioral_a86f70441267014ffedcb802b679dd560}{\hyperlink{class_a_l_u___control_1_1_behavioral_a86f70441267014ffedcb802b679dd560}{\-A\-L\-U\-\_\-\-Control\-\_\-\-Output}{\bfseries  ( {\bfseries {\bfseries \hyperlink{class_a_l_u___control_ab5e38318e201e0011dc9fe806b2c9ea4}{\-A\-L\-U\-\_\-\-O\-P}}   ,{\bfseries \hyperlink{class_a_l_u___control_aa057cc5bea77eab736c8c526429fa204}{\-A\-L\-U\-\_\-\-Funct\-\_\-\-In}}  } )}}\label{class_a_l_u___control_1_1_behavioral_a86f70441267014ffedcb802b679dd560}
 
 \end{DoxyCompactItemize}
 
+
+\subsection{\-Detailed \-Description}
+\-This is the \hyperlink{class_a_l_u}{\-A\-L\-U} control that generates the 4 control bits for the \hyperlink{class_a_l_u}{\-A\-L\-U}. 
+
+\-This is the controller that sets the control variables.
+
+opcode 00\-: load/store functions (add for calculating adress)
+
+opcode 01\-: branch on equal (substract for comparing inputs)
+
+opcode 10\-: \-R-\/type instruction (depends on \-A\-L\-U\-\_\-\-Funct\-\_\-\-In)
+
+\-A\-L\-U\-\_\-\-Funct\-\_\-\-In 100000\-: add
+
+\-A\-L\-U\-\_\-\-Funct\-\_\-\-In 100000\-: substract
+
+\-A\-L\-U\-\_\-\-Funct\-\_\-\-In 100000\-: \-A\-N\-D
+
+\-A\-L\-U\-\_\-\-Funct\-\_\-\-In 100000\-: \-O\-R
+
+\-A\-L\-U\-\_\-\-Funct\-\_\-\-In 100000\-: set less then
+
+depending on function field sets (\-Reg\-Dst,\-A\-L\-U\-Src,\-Memto\-Reg,\-Reg\-Write,\-Mem\-Read,\-Branch,\-A\-L\-Uop)\-:
+
+000000\-:(1,0,0,1,0,0,0,0,10) -\/-\/$>$ \-R-\/type instruction
+
+100011\-:(0,1,1,1,1,0,0,0,00) -\/-\/$>$ load word instruction
+
+101011\-:(0,1,0,0,0,1,0,0,00) -\/-\/$>$ save word instruction
+
+000100\-:(0,0,0,0,0,0,1/0,0/1,01)-\/-\/$>$ branch equal/branch not equal instruction 
 
 \-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 

@@ -25,14 +25,12 @@
  <tbody>
  <tr style="height: 56px;">
   
-  <td id="projectlogo"><img alt="Logo" src="ehb.jpg"/></td>
-  
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">ROLLMIPS
    &#160;<span id="projectnumber">0.0.1</span>
    </div>
-   <div id="projectbrief">An implementation of a MIPS processor</div>
+   <div id="projectbrief">MIPS processor implementation in VHDL</div>
   </td>
   
   
@@ -105,6 +103,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="ALU_Control::Behavioral" -->
+<p>This is the <a class="el" href="class_a_l_u.html" title="Use standard library.">ALU</a> control that generates the 4 control bits for the <a class="el" href="class_a_l_u.html" title="Use standard library.">ALU</a>.  
+ <a href="class_a_l_u___control_1_1_behavioral.html#details">More...</a></p>
+
 <p><a href="class_a_l_u___control_1_1_behavioral-members.html">List of all members.</a></p>
 <br/>
 <br/>
@@ -112,9 +113,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="Processes"></a>
 Processes</h2></td></tr>
  <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86f70441267014ffedcb802b679dd560"></a><!-- doxytag: member="ALU_Control::Behavioral::ALU_Control_Output" ref="a86f70441267014ffedcb802b679dd560" args="ALU_OP,ALU_Funct_In" -->
-<a class="el" href="class_a_l_u___control_1_1_behavioral.html#a86f70441267014ffedcb802b679dd560">ALU_Control_Output</a>&#160;</td><td class="memItemRight" valign="bottom"><b> ( <b><span class="vhdlchar">ALU_OP</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar">,</span><span class="vhdlchar">ALU_Funct_In</span><span class="vhdlchar"> </span></b> )</b></td></tr>
+<a class="el" href="class_a_l_u___control_1_1_behavioral.html#a86f70441267014ffedcb802b679dd560">ALU_Control_Output</a>&#160;</td><td class="memItemRight" valign="bottom"><b> ( <b><b><a class="el" href="class_a_l_u___control.html#ab5e38318e201e0011dc9fe806b2c9ea4">ALU_OP</a></b> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar">,</span><b><a class="el" href="class_a_l_u___control.html#aa057cc5bea77eab736c8c526429fa204">ALU_Funct_In</a></b> <span class="vhdlchar"> </span></b> )</b></td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>This is the <a class="el" href="class_a_l_u.html" title="Use standard library.">ALU</a> control that generates the 4 control bits for the <a class="el" href="class_a_l_u.html" title="Use standard library.">ALU</a>. </p>
+<p>This is the controller that sets the control variables.</p>
+<p>opcode 00: load/store functions (add for calculating adress)</p>
+<p>opcode 01: branch on equal (substract for comparing inputs)</p>
+<p>opcode 10: R-type instruction (depends on ALU_Funct_In)</p>
+<p>ALU_Funct_In 100000: add</p>
+<p>ALU_Funct_In 100000: substract</p>
+<p>ALU_Funct_In 100000: AND</p>
+<p>ALU_Funct_In 100000: OR</p>
+<p>ALU_Funct_In 100000: set less then</p>
+<p>depending on function field sets (RegDst,ALUSrc,MemtoReg,RegWrite,MemRead,Branch,ALUop):</p>
+<p>000000:(1,0,0,1,0,0,0,0,10) --&gt; R-type instruction</p>
+<p>100011:(0,1,1,1,1,0,0,0,00) --&gt; load word instruction</p>
+<p>101011:(0,1,0,0,0,1,0,0,00) --&gt; save word instruction</p>
+<p>000100:(0,0,0,0,0,0,1/0,0/1,01)--&gt; branch equal/branch not equal instruction </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>ALUControl.vhd</li>
 </ul>
 </div><!-- contents -->
@@ -135,7 +152,7 @@ Processes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 15 2013 18:44:58 for ROLLMIPS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 17 2013 14:04:01 for ROLLMIPS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

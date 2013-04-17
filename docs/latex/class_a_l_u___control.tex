@@ -1,11 +1,16 @@
 \hypertarget{class_a_l_u___control}{\section{\-A\-L\-U\-\_\-\-Control \-Entity \-Reference}
 \label{class_a_l_u___control}\index{\-A\-L\-U\-\_\-\-Control@{\-A\-L\-U\-\_\-\-Control}}
 }
+
+
+\-Use standard library.  
+
+
 \subsection*{\-Entities}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_a_l_u___control_1_1_behavioral}{\-Behavioral} architecture
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \-This is the \hyperlink{class_a_l_u}{\-A\-L\-U} control that generates the 4 control bits for the \hyperlink{class_a_l_u}{\-A\-L\-U}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \*
 \*
 \subsection*{\-Ports}
@@ -13,14 +18,19 @@
 \item 
 \hypertarget{class_a_l_u___control_ab5e38318e201e0011dc9fe806b2c9ea4}{\hyperlink{class_a_l_u___control_ab5e38318e201e0011dc9fe806b2c9ea4}{\-A\-L\-U\-\_\-\-O\-P}  {\bfseries {\bfseries in }} {\bfseries \-S\-T\-D\-\_\-logic\-\_\-vector (   1    downto    0  ) } }\label{class_a_l_u___control_ab5e38318e201e0011dc9fe806b2c9ea4}
 
-\item 
+\begin{DoxyCompactList}\small\item\em \-Opcode from controller. \end{DoxyCompactList}\item 
 \hypertarget{class_a_l_u___control_aa057cc5bea77eab736c8c526429fa204}{\hyperlink{class_a_l_u___control_aa057cc5bea77eab736c8c526429fa204}{\-A\-L\-U\-\_\-\-Funct\-\_\-\-In}  {\bfseries {\bfseries in }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R (   5    downto    0  ) } }\label{class_a_l_u___control_aa057cc5bea77eab736c8c526429fa204}
 
-\item 
+\begin{DoxyCompactList}\small\item\em funt\-\_\-in from instruction (first 6 bits) \end{DoxyCompactList}\item 
 \hypertarget{class_a_l_u___control_a770899168989eb2b8a2d815fbd0a3a17}{\hyperlink{class_a_l_u___control_a770899168989eb2b8a2d815fbd0a3a17}{\-A\-L\-U\-\_\-\-Control\-\_\-out}  {\bfseries {\bfseries out }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R (   3    downto    0  ) } }\label{class_a_l_u___control_a770899168989eb2b8a2d815fbd0a3a17}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em alu\-\_\-control output \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{\-Detailed \-Description}
+\-Use standard library. 
+
+use logic elements \hyperlink{class_a_l_u___control}{\-A\-L\-U\-\_\-\-Control} of the \-M\-I\-P\-S processor the \hyperlink{class_a_l_u___control}{\-A\-L\-U\-\_\-\-Control} takes as input the 6 first bit\-S from the instruction and the 2 bits code from the controller. \-It outputs a 4 bits code to control the \hyperlink{class_a_l_u}{\-A\-L\-U} 
 
 \-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 

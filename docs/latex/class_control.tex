@@ -1,11 +1,11 @@
 \hypertarget{class_control}{\section{\-Control \-Entity \-Reference}
 \label{class_control}\index{\-Control@{\-Control}}
 }
-\subsection*{\-Entities}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{class_control_1_1_behavioral}{\-Behavioral} architecture
-\end{DoxyCompactItemize}
+
+
+\-Use standard library.  
+
+
 \*
 \*
 \subsection*{\-Ports}
@@ -13,38 +13,43 @@
 \item 
 \hypertarget{class_control_a35120c002e477a6e77c738ea1aaa5505}{\hyperlink{class_control_a35120c002e477a6e77c738ea1aaa5505}{\-Instruction}  {\bfseries {\bfseries in }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R (   31    downto    26  ) } }\label{class_control_a35120c002e477a6e77c738ea1aaa5505}
 
-\item 
+\begin{DoxyCompactList}\small\item\em last 6 bits of instruction (?) \end{DoxyCompactList}\item 
 \hypertarget{class_control_a837426aa7a23a4b3f1534d7a5a47fd84}{\hyperlink{class_control_a837426aa7a23a4b3f1534d7a5a47fd84}{\-Instruction\-\_\-funct}  {\bfseries {\bfseries in }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R (   5    downto    0  ) } }\label{class_control_a837426aa7a23a4b3f1534d7a5a47fd84}
 
-\item 
+\begin{DoxyCompactList}\small\item\em first 6 bits of instruction (\-F\-U\-N\-C\-T field) \end{DoxyCompactList}\item 
 \hypertarget{class_control_a3e8450f5ca7972a364f6eaffec9c86a2}{\hyperlink{class_control_a3e8450f5ca7972a364f6eaffec9c86a2}{\-Reg\-Dst}  {\bfseries {\bfseries out }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C } }\label{class_control_a3e8450f5ca7972a364f6eaffec9c86a2}
 
-\item 
+\begin{DoxyCompactList}\small\item\em \-Register \-Destination selector. \end{DoxyCompactList}\item 
 \hypertarget{class_control_aec5087b6dc490446af52e39d0264cf50}{\hyperlink{class_control_aec5087b6dc490446af52e39d0264cf50}{\-A\-L\-U\-Src}  {\bfseries {\bfseries out }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C } }\label{class_control_aec5087b6dc490446af52e39d0264cf50}
 
-\item 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_a_l_u}{\-A\-L\-U} input \-Source selector. \end{DoxyCompactList}\item 
 \hypertarget{class_control_ae18caf473070cf8e735d12ca860fb762}{\hyperlink{class_control_ae18caf473070cf8e735d12ca860fb762}{\-Memto\-Reg}  {\bfseries {\bfseries out }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C } }\label{class_control_ae18caf473070cf8e735d12ca860fb762}
 
-\item 
+\begin{DoxyCompactList}\small\item\em write to register from memory \end{DoxyCompactList}\item 
 \hypertarget{class_control_a3862189e11b01293ae0279072adc6151}{\hyperlink{class_control_a3862189e11b01293ae0279072adc6151}{\-Reg\-Write}  {\bfseries {\bfseries out }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C } }\label{class_control_a3862189e11b01293ae0279072adc6151}
 
-\item 
+\begin{DoxyCompactList}\small\item\em \-Write to register from \hyperlink{class_a_l_u}{\-A\-L\-U} output. \end{DoxyCompactList}\item 
 \hypertarget{class_control_a703e49c8be2a086810119a4f32c2edd0}{\hyperlink{class_control_a703e49c8be2a086810119a4f32c2edd0}{\-Mem\-Read}  {\bfseries {\bfseries out }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C } }\label{class_control_a703e49c8be2a086810119a4f32c2edd0}
 
-\item 
+\begin{DoxyCompactList}\small\item\em read from memory \end{DoxyCompactList}\item 
 \hypertarget{class_control_af268f4bd077313d14130fa77402beccb}{\hyperlink{class_control_af268f4bd077313d14130fa77402beccb}{\-Mem\-Write}  {\bfseries {\bfseries out }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C } }\label{class_control_af268f4bd077313d14130fa77402beccb}
 
-\item 
+\begin{DoxyCompactList}\small\item\em write to memory \end{DoxyCompactList}\item 
 \hypertarget{class_control_a8bcff3a33808999c1998531a90201ac6}{\hyperlink{class_control_a8bcff3a33808999c1998531a90201ac6}{\-Branch}  {\bfseries {\bfseries out }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C } }\label{class_control_a8bcff3a33808999c1998531a90201ac6}
 
-\item 
+\begin{DoxyCompactList}\small\item\em branch if equal \end{DoxyCompactList}\item 
 \hypertarget{class_control_a24dd763afcb5d8a8d91e3c3f5a415704}{\hyperlink{class_control_a24dd763afcb5d8a8d91e3c3f5a415704}{\-Branch\-\_\-ne}  {\bfseries {\bfseries out }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C } }\label{class_control_a24dd763afcb5d8a8d91e3c3f5a415704}
 
-\item 
+\begin{DoxyCompactList}\small\item\em branch if not equal \end{DoxyCompactList}\item 
 \hypertarget{class_control_accc0d3f810d226b65ebd44774daada7e}{\hyperlink{class_control_accc0d3f810d226b65ebd44774daada7e}{\-A\-L\-Uop}  {\bfseries {\bfseries out }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R (   1    downto    0  ) } }\label{class_control_accc0d3f810d226b65ebd44774daada7e}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em input for \hyperlink{class_a_l_u___control}{\-A\-L\-U\-\_\-\-Control} \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{\-Detailed \-Description}
+\-Use standard library. 
+
+use logic elements \-Controller of the \-M\-I\-P\-S processor sends out control signals depending on the instruction first 6 bits (\-F\-U\-N\-C\-T field) and the instructions 26-\/31 bits(?) 
 
 \-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 

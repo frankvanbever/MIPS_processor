@@ -1,11 +1,16 @@
 \hypertarget{class_a_l_u}{\section{\-A\-L\-U \-Entity \-Reference}
 \label{class_a_l_u}\index{\-A\-L\-U@{\-A\-L\-U}}
 }
+
+
+\-Use standard library.  
+
+
 \subsection*{\-Entities}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_a_l_u_1_1_behavioral}{\-Behavioral} architecture
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \-This is a 32 bit \hyperlink{class_a_l_u}{\-A\-L\-U} for the \-M\-I\-P\-S processor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \*
 \*
 \subsection*{\-Ports}
@@ -13,20 +18,25 @@
 \item 
 \hypertarget{class_a_l_u_ad506dc3c4d5a49b33075dcf2ea057306}{\hyperlink{class_a_l_u_ad506dc3c4d5a49b33075dcf2ea057306}{\-A\-L\-U\-\_\-\-Input\-\_\-1}  {\bfseries {\bfseries in }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R (   31    downto    0  ) } }\label{class_a_l_u_ad506dc3c4d5a49b33075dcf2ea057306}
 
-\item 
+\begin{DoxyCompactList}\small\item\em alu input 1 (rs) \end{DoxyCompactList}\item 
 \hypertarget{class_a_l_u_a657f38dca67063612c1c3d9327260efd}{\hyperlink{class_a_l_u_a657f38dca67063612c1c3d9327260efd}{\-A\-L\-U\-\_\-\-Input\-\_\-2}  {\bfseries {\bfseries in }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R (   31    downto    0  ) } }\label{class_a_l_u_a657f38dca67063612c1c3d9327260efd}
 
-\item 
+\begin{DoxyCompactList}\small\item\em alu input 2 (rt) \end{DoxyCompactList}\item 
 \hypertarget{class_a_l_u_a15e59062cfee013b791bf90106bfe0a2}{\hyperlink{class_a_l_u_a15e59062cfee013b791bf90106bfe0a2}{\-A\-L\-U\-\_\-\-Zero}  {\bfseries {\bfseries out }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C } }\label{class_a_l_u_a15e59062cfee013b791bf90106bfe0a2}
 
-\item 
+\begin{DoxyCompactList}\small\item\em alu zero output \end{DoxyCompactList}\item 
 \hypertarget{class_a_l_u_a75eaa7827fe89e680e452286e5f64e93}{\hyperlink{class_a_l_u_a75eaa7827fe89e680e452286e5f64e93}{\-A\-L\-U\-\_\-\-Result}  {\bfseries {\bfseries out }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R (   31    downto    0  ) } }\label{class_a_l_u_a75eaa7827fe89e680e452286e5f64e93}
 
-\item 
+\begin{DoxyCompactList}\small\item\em alu 32 bit output \end{DoxyCompactList}\item 
 \hypertarget{class_a_l_u_a160e9acd866b7a383a28d77c159bd52a}{\hyperlink{class_a_l_u_a160e9acd866b7a383a28d77c159bd52a}{\-A\-L\-U\-\_\-\-Control\-\_\-\-In}  {\bfseries {\bfseries in }} {\bfseries \-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R (   3    downto    0  ) } }\label{class_a_l_u_a160e9acd866b7a383a28d77c159bd52a}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em input from alu control \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{\-Detailed \-Description}
+\-Use standard library. 
+
+use logic elements \hyperlink{class_a_l_u}{\-A\-L\-U} of the \-M\-I\-P\-S processor this is a 32-\/bit alu with 2 32-\/bit inputs and a 32 bit output, it also has a zero output bit it needs 4 control bits from the \hyperlink{class_a_l_u}{\-A\-L\-U} control to function 
 
 \-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
