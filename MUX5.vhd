@@ -9,7 +9,7 @@ use ieee.std_logic_arith.all;
 -------------------------------------------------------------------------------
 --! 5 bits 2:1 multiplexer
 -------------------------------------------------------------------------------
-entity MUX is
+entity MUX5 is
   port (
     --! selection, 0 means output 1, 1 means output 2
     selector : in std_logic;
@@ -37,7 +37,7 @@ begin
   -----------------------------------------------------------------------------
   --! On every rising edge the mux puts the selected signal on the output
   -----------------------------------------------------------------------------
-  mux_proc : process ()
+  mux5_proc : process ()
   begin
       if selector = '0' then
         vector_out <= vector_in_1;
