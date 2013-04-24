@@ -26,7 +26,7 @@ entity MUX5 is
     vector_out : out std_logic_vector(5 downto 0)
 
     );
-end MUX;
+end MUX5;
 
 
 -------------------------------------------------------------------------------
