@@ -30,9 +30,9 @@ end MUX5;
 
 
 -------------------------------------------------------------------------------
---! It's a MUX ffs
+--! It's a MUX5 ffs
 -------------------------------------------------------------------------------
-architecture behavioral of MUX is
+architecture behavioral of MUX5 is
 begin
   -----------------------------------------------------------------------------
   --! On every rising edge the mux puts the selected signal on the output
