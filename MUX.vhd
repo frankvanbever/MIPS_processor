@@ -13,9 +13,7 @@ entity MUX is
   port (
 
     -- input signals
-    
-    --! clock signal
-    clk      : in std_logic;
+
     --! selection, 0 means output 1, 1 means output 2
     selector : in std_logic;
 
@@ -42,15 +40,13 @@ begin
   -----------------------------------------------------------------------------
   --! On every rising edge the mux puts the selected signal on the output
   -----------------------------------------------------------------------------
-  mux_proc : process (clk)
+  mux_proc : process (selector)
   begin
-    if rising_edge(clk) then
       if selector = '0' then
         vector_out <= vector_in_1;
       elsif selector = '1' then
         vector_out <= vector_in_2;
       end if;
-    end if;
   end process;
 end behavioral;
 

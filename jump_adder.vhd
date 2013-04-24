@@ -13,9 +13,6 @@ use ieee.std_logic_arith.all;
 entity jump_adder is
   port(
 
-    -- clock input signal
-    clk : in std_logic;
-
     -- input vectors
     --! Current value of the PC
     instruction : in std_logic_vector(31 downto 0);
