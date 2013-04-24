@@ -1,0 +1,52 @@
+\hypertarget{class_a_l_u_1_1_behavioral}{\section{Behavioral Architecture Reference}
+\label{class_a_l_u_1_1_behavioral}\index{Behavioral@{Behavioral}}
+}
+
+
+This is a 32 bit \hyperlink{class_a_l_u}{A\-L\-U} for the M\-I\-P\-S processor.  
+
+
+\subsection*{Processes}
+ \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_l_u_1_1_behavioral_a5cb9b9e6524f025f9ee81455f7323d1c}{A\-L\-U\-\_\-\-Result\-\_\-\-Calc}{\bfseries  ( {\bfseries {\bfseries \hyperlink{class_a_l_u_a914f203651b8887062dd7432ef37b92a}{A\-L\-U\-\_\-\-Input\-\_\-1}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }} , {\bfseries {\bfseries \hyperlink{class_a_l_u_aa3b3b0b101b8269e00ade1a474bb35e0}{A\-L\-U\-\_\-\-Input\-\_\-2}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }} , {\bfseries {\bfseries \hyperlink{class_a_l_u_a9ea12157ac75337610ea73ec756eca4c}{A\-L\-U\-\_\-\-Control\-\_\-\-In}} \textcolor{vhdlchar}{ }} )}
+\end{DoxyCompactItemize}
+\subsection*{Shared Variables}
+ \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_l_u_1_1_behavioral_a97c0e91da4079e1bcdc77132d69c46b2}{Result} {\bfseries \textcolor{comment}{Std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} 
+\begin{DoxyCompactList}\small\item\em Register to store Result of alu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a 32 bit \hyperlink{class_a_l_u}{A\-L\-U} for the M\-I\-P\-S processor. 
+
+the \hyperlink{class_a_l_u}{A\-L\-U} is able to do following functions\-: A\-N\-D,O\-R, add, substract, set on less then, N\-O\-R (see \hyperlink{class_a_l_u___control}{A\-L\-U\-\_\-\-Control})
+
+the zero output bit is set if the result of the \hyperlink{class_a_l_u}{A\-L\-U} is 0 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_l_u_1_1_behavioral_a5cb9b9e6524f025f9ee81455f7323d1c}{\index{A\-L\-U\-::\-Behavioral@{A\-L\-U\-::\-Behavioral}!A\-L\-U\-\_\-\-Result\-\_\-\-Calc@{A\-L\-U\-\_\-\-Result\-\_\-\-Calc}}
+\index{A\-L\-U\-\_\-\-Result\-\_\-\-Calc@{A\-L\-U\-\_\-\-Result\-\_\-\-Calc}!ALU::Behavioral@{A\-L\-U\-::\-Behavioral}}
+\subsubsection[{A\-L\-U\-\_\-\-Result\-\_\-\-Calc}]{\setlength{\rightskip}{0pt plus 5cm} {\bfseries \textcolor{vhdlchar}{ }} A\-L\-U\-\_\-\-Result\-\_\-\-Calc(
+\begin{DoxyParamCaption}
+\item[{}]{{\bfseries {\bfseries {\bf A\-L\-U\-\_\-\-Input\-\_\-1}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }} {\em } , }
+\item[{}]{{\bfseries {\bfseries {\bf A\-L\-U\-\_\-\-Input\-\_\-2}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }} {\em } , }
+\item[{}]{{\bfseries {\bfseries {\bf A\-L\-U\-\_\-\-Control\-\_\-\-In}} \textcolor{vhdlchar}{ }} {\em }}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [Process]}}}\label{class_a_l_u_1_1_behavioral_a5cb9b9e6524f025f9ee81455f7323d1c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_a_l_u_1_1_behavioral_a97c0e91da4079e1bcdc77132d69c46b2}{\index{A\-L\-U\-::\-Behavioral@{A\-L\-U\-::\-Behavioral}!Result@{Result}}
+\index{Result@{Result}!ALU::Behavioral@{A\-L\-U\-::\-Behavioral}}
+\subsubsection[{Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Result} {\bfseries \textcolor{comment}{Std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Shared Variable]}}}\label{class_a_l_u_1_1_behavioral_a97c0e91da4079e1bcdc77132d69c46b2}
+
+
+Register to store Result of alu. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+documenten/\-Codes/\-M\-I\-P\-S\-\_\-processor/\hyperlink{_a_l_u_8vhd}{A\-L\-U.\-vhd}\end{DoxyCompactItemize}

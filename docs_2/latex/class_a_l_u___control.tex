@@ -1,0 +1,60 @@
+\hypertarget{class_a_l_u___control}{\section{A\-L\-U\-\_\-\-Control Entity Reference}
+\label{class_a_l_u___control}\index{A\-L\-U\-\_\-\-Control@{A\-L\-U\-\_\-\-Control}}
+}
+
+
+the \hyperlink{class_a_l_u___control}{A\-L\-U\-\_\-\-Control} takes as input the 6 first bit\-S from the instruction and the 2 bits code from the controller. It outputs a 4 bits code to control the \hyperlink{class_a_l_u}{A\-L\-U}  
+
+
+Inheritance diagram for A\-L\-U\-\_\-\-Control\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_l_u___control}
+\end{center}
+\end{figure}
+\subsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_l_u___control_1_1_behavioral}{Behavioral} architecture
+\begin{DoxyCompactList}\small\item\em This is the \hyperlink{class_a_l_u}{A\-L\-U} control that generates the 4 control bits for the \hyperlink{class_a_l_u}{A\-L\-U}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Ports}
+ \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_l_u___control_ab6a5d61e888c23ba77524db9a1b57d00}{A\-L\-U\-\_\-\-O\-P}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{1} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} 
+\begin{DoxyCompactList}\small\item\em Opcode from controller. \end{DoxyCompactList}\item 
+\hyperlink{class_a_l_u___control_a7a955f01ce8523310216d431d36b3355}{A\-L\-U\-\_\-\-Funct\-\_\-\-In}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{5} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} 
+\begin{DoxyCompactList}\small\item\em funt\-\_\-in from instruction (first 6 bits) \end{DoxyCompactList}\item 
+\hyperlink{class_a_l_u___control_a8ec3ba373cae4fe06c7d82b2ce12561f}{A\-L\-U\-\_\-\-Control\-\_\-out}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{3} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} 
+\begin{DoxyCompactList}\small\item\em alu\-\_\-control output \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the \hyperlink{class_a_l_u___control}{A\-L\-U\-\_\-\-Control} takes as input the 6 first bit\-S from the instruction and the 2 bits code from the controller. It outputs a 4 bits code to control the \hyperlink{class_a_l_u}{A\-L\-U} 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_a_l_u___control_a8ec3ba373cae4fe06c7d82b2ce12561f}{\index{A\-L\-U\-\_\-\-Control@{A\-L\-U\-\_\-\-Control}!A\-L\-U\-\_\-\-Control\-\_\-out@{A\-L\-U\-\_\-\-Control\-\_\-out}}
+\index{A\-L\-U\-\_\-\-Control\-\_\-out@{A\-L\-U\-\_\-\-Control\-\_\-out}!ALU_Control@{A\-L\-U\-\_\-\-Control}}
+\subsubsection[{A\-L\-U\-\_\-\-Control\-\_\-out}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\-L\-U\-\_\-\-Control\-\_\-out} {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{3} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}}\label{class_a_l_u___control_a8ec3ba373cae4fe06c7d82b2ce12561f}
+
+
+alu\-\_\-control output 
+
+\hypertarget{class_a_l_u___control_a7a955f01ce8523310216d431d36b3355}{\index{A\-L\-U\-\_\-\-Control@{A\-L\-U\-\_\-\-Control}!A\-L\-U\-\_\-\-Funct\-\_\-\-In@{A\-L\-U\-\_\-\-Funct\-\_\-\-In}}
+\index{A\-L\-U\-\_\-\-Funct\-\_\-\-In@{A\-L\-U\-\_\-\-Funct\-\_\-\-In}!ALU_Control@{A\-L\-U\-\_\-\-Control}}
+\subsubsection[{A\-L\-U\-\_\-\-Funct\-\_\-\-In}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\-L\-U\-\_\-\-Funct\-\_\-\-In} {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{5} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}}\label{class_a_l_u___control_a7a955f01ce8523310216d431d36b3355}
+
+
+funt\-\_\-in from instruction (first 6 bits) 
+
+\hypertarget{class_a_l_u___control_ab6a5d61e888c23ba77524db9a1b57d00}{\index{A\-L\-U\-\_\-\-Control@{A\-L\-U\-\_\-\-Control}!A\-L\-U\-\_\-\-O\-P@{A\-L\-U\-\_\-\-O\-P}}
+\index{A\-L\-U\-\_\-\-O\-P@{A\-L\-U\-\_\-\-O\-P}!ALU_Control@{A\-L\-U\-\_\-\-Control}}
+\subsubsection[{A\-L\-U\-\_\-\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\-L\-U\-\_\-\-O\-P} {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{1} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}}\label{class_a_l_u___control_ab6a5d61e888c23ba77524db9a1b57d00}
+
+
+Opcode from controller. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+documenten/\-Codes/\-M\-I\-P\-S\-\_\-processor/\hyperlink{_a_l_u_control_8vhd}{A\-L\-U\-Control.\-vhd}\end{DoxyCompactItemize}
