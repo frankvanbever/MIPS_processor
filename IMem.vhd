@@ -52,8 +52,27 @@ begin
   MemoryPC : process (PC)
     subtype  word is std_logic_vector(31 downto 0);
     type     memory is array (0 to 7) of word;
-    variable myMem : memory := (X"00000001", X"00000010", X"00000100", X"00001000", X"00010000", X"00100000", X"01000000", X"10000000");
+    variable myMem : memory := (X"21280005", X"20090005", X"01095020", X"AC080001", X"8C0B0001", X"00000020", X"00000020", X"00000020");
 
+-- add $t0, $t1, $t2	add $8, $9, $10 012A4020
+-- sub $t0, $t1, $t2 sub $8, $9, $10 012A4022
+-- or $t0, $t1, $t2 or $8, $9, $10 012A4025
+-- and $t0, $t1, $t2 and $8, $9, $10 012A4024
+-- slt $t0, $t1, $t2 slt $8, $9, $10 012A402A
+-- slt $t0, $t2, $t1 slt $8, $10, $9 0149402A
+-- nor $t0, $t1, $t2 012A4027
+-- beq $zero,$zero 1000FFFF
+-- add $10, $8, $9 01095020
+-- addi $8, $9, 5 21280005
+
+-- addi $8, $0, 5 20080005
+-- addi $9, $0, 5 20090005
+-- add $10, $8, $9 01095020
+-- sw $10, 0($0) AC080000
+-- lw $11, 0($0) 8C0B0000
+
+-- sw $10, 1($0) AC080001
+-- lw $11, 1($0) 8C0B0001
 
     begin
       instruction <= myMem(conv_integer(PC(31 downto 2)));

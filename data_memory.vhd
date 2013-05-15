@@ -124,16 +124,13 @@ shared variable dataMem : memory_array :=
                 --! Every clockcycle the proces sees in which mode it is and
                 --! reads or writes values accordingly.
                 ---------------------------------------------------------------
-		data_mem_proc : process(clk)
+		data_mem_proc : process(MemRead,MemWrite,adress,write_data)
 		begin
-			if rising_edge(clk) then
-				if MemRead = '1' and MemWrite = '0' then
+				if (MemRead = '1') and (MemWrite = '0') then 
 					read_data <= dataMem(conv_integer(adress));
-				elsif MemRead = '0' and MemWrite = '1' then
+				elsif (MemRead = '0') and (MemWrite = '1') then
 					dataMem(conv_integer(adress)) := write_data;
 				end if;
-			end if;
-
 		end process;
 	end behavioral;
 	

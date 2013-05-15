@@ -48,17 +48,23 @@ begin
 			when "0001" => Result := ALU_Input_1 OR ALU_Input_2;		-- OR
 			when "0010" => Result := ALU_Input_1 + ALU_Input_2;		-- add
 			when "0110" => Result := ALU_Input_1 - ALU_Input_2;		-- substract
-			when "0111" => Result := ALU_Input_1 - ALU_Input_2;		-- set on les then calculation
+			when "0111" => if( (  ALU_Input_1 - ALU_Input_2 ) > X"80000000" ) then		--if input2 > input1
+									Result:=X"00000001";			--set result to 1
+								else										-- else (input2<=input1)
+									Result:=X"00000000";			-- set to zero
+								end if; -- set on les then calculation
 			when "1100" => Result := ALU_Input_1 NOR ALU_Input_2;		-- NOR
-			when others => Result := X"00000000";		--error code
+			when others => Result := X"10101010";		--error code
 		end case;
-		if(ALU_Control_In="0111")then		-- set on less then changes the result
-			if(Result<X"00000000") then		--if input2 > input1
-				Result:=X"00000001";				--set result to 1
-			else									-- else (input2<=input1)
-				Result:=X"00000000";			-- set to zero
-			end if;
-		end if;
+
+
+--		if(ALU_Control_In="0111")then		-- set on less then changes the result
+--			if(Result<X"00000000") then		--if input2 > input1
+--				Result:=X"00000001";				--set result to 1
+--			else									-- else (input2<=input1)
+--				Result:=X"00000000";			-- set to zero
+--			end if;
+--		end if;
 			
 		if(Result=X"00000000")then			--set the zero line
 			ALU_Zero<='1';					

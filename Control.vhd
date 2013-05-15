@@ -51,6 +51,7 @@ begin
 	Control_out: process(Instruction,Instruction_funct)
 		begin
 		case Instruction is
+			
 			when "000000" => --R-format instruction
 			RegDst<= '1';
 			ALUSrc<=	'0';
@@ -61,26 +62,7 @@ begin
 			Branch<='0';
 			Branch_ne<='0';
 			ALUop<="10";
-			when "100011" => --load word instruction
-			RegDst	<= '0';
-			ALUSrc	<=	'1';
-			MemtoReg	<= '1';
-			RegWrite	<= '1';
-			MemRead	<= '1';
-			MemWrite	<= '0';
-			Branch	<= '0';
-			Branch_ne<='0';
-			ALUop		<= "00";
-			when "101011" => -- save word instruction
-			RegDst	<= '0';
-			ALUSrc	<=	'1';
-			MemtoReg	<= '0';
-			RegWrite	<= '0';
-			MemRead	<= '0';
-			MemWrite	<= '1';
-			Branch	<= '0';
-			Branch_ne<='0';
-			ALUop		<= "00";
+				
 			when "000100" =>	-- branch on equal
 			RegDst	<= '0';
 			ALUSrc	<=	'0';
@@ -88,14 +70,58 @@ begin
 			RegWrite	<= '0';
 			MemRead	<= '0';
 			MemWrite	<= '0';
-			if(Instruction_funct="000100")then
 			Branch	<= '1';
 			Branch_ne<= '0';
-			else
+			ALUop		<= "01";
+			
+			when "000101" => -- branch on not equal
+			RegDst	<= '0';
+			ALUSrc	<=	'0';
+			MemtoReg	<= '0';
+			RegWrite	<= '0';
+			MemRead	<= '0';
+			MemWrite	<= '0';
 			Branch	<= '0';
 			Branch_ne<= '1';
-			end if;
 			ALUop		<= "01";
+			
+			
+			when "001000" =>  -- add immediate
+			RegDst<= '0';
+			ALUSrc<=	'1';
+			MemtoReg<= '0';
+			RegWrite<= '1';
+			MemRead<='0';
+			MemWrite<='0';
+			Branch<='0';
+			Branch_ne<='0';
+			
+		
+			when "101011" => -- store word
+			
+			RegDst<= '0';
+			ALUSrc<=	'1';
+			MemtoReg<= '0';
+			RegWrite<= '0';
+			MemRead<='0';
+			MemWrite<='1';
+			Branch<='0';
+			Branch_ne<='0';
+			ALUop		<= "00";
+			
+			
+			when "100011" => -- load word
+			
+			RegDst<= '0';
+			ALUSrc<=	'1';
+			MemtoReg<= '1';
+			RegWrite<= '1';
+			MemRead<='1';
+			MemWrite<='0';
+			Branch<='0';
+			Branch_ne<='0';
+			ALUop		<= "00";
+			
 			when others => --error
 			RegDst	<= '0';
 			ALUSrc	<=	'0';

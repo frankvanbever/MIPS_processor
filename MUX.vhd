@@ -16,6 +16,7 @@ entity MUX is
 
     --! selection, 0 means output 1, 1 means output 2
     selector : in std_logic;
+	 
 
 
     -- input vectors
@@ -40,7 +41,7 @@ begin
   -----------------------------------------------------------------------------
   --! On every rising edge the mux puts the selected signal on the output
   -----------------------------------------------------------------------------
-  mux_proc : process (selector)
+  mux_proc : process (vector_in_1,vector_in_2)
   begin
       if selector = '0' then
         vector_out <= vector_in_1;

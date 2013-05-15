@@ -79,18 +79,18 @@ architecture behavioral of register_file is
   type    registerFile is array (0 to 31) of word;
 
   shared variable register_file : registerFile :=
-    (X"00000000",
-     X"00000000",
-     X"00000000",
-     X"00000000",
-     X"00000000",
-     X"00000000",
-     X"00000000",
-     X"00000000",
-     X"00000000",
-     X"00000000",
-     X"00000000",
-     X"00000000",
+    (X"00000000", -- 0
+     X"00000000", -- 1
+     X"00000000", -- 2
+     X"00000000",	-- 3
+     X"00000000", -- 4
+     X"00000000", -- 5
+     X"00000000", -- 6
+     X"00000000", -- 7
+     X"00000000", -- 8
+     X"00000000", -- 9
+     X"00000000", -- 10
+     X"00000000", -- 11
      X"00000000",
      X"00000000",
      X"00000000",
@@ -113,19 +113,25 @@ architecture behavioral of register_file is
      X"00000000");                      --! All registers are initialized to 0
 
 begin  -- behavioral
-
-  reg_file_proc : process (clk)
+	
+	
+  read_reg_proc : process ( Read_reg_1 , Read_reg_2 )
+  begin
+  Read_data_1 <= register_file(conv_integer(Read_reg_1));
+  Read_data_2 <= register_file(conv_integer(Read_reg_2));
+  end process read_reg_proc;
+  
+  
+  write_reg_proc : process (clk)
   begin  -- process reg_file_proc
     if clk'event and clk = '1' then     -- rising clock edge
-      Read_data_1 <= register_file(conv_integer(Read_reg_1));
-      Read_data_2 <= register_file(conv_integer(Read_reg_2));
       if write_enable = '1' then
         if Write_reg /= X"00000000" then
           register_file(conv_integer(Write_reg)) := Write_data;
         end if;
       end if;
     end if;
-  end process reg_file_proc;
+  end process write_reg_proc;
 
 end behavioral;
 
