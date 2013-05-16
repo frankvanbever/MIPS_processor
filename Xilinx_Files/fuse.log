@@ -1,0 +1,52 @@
+Running: /opt/Xilinx/14.4/ISE_DS/ISE/bin/lin/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "secureip" -o "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel_toplevel_sch_tb_isim_beh.exe" -prj "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel_toplevel_sch_tb_beh.prj" "work.toplevel_toplevel_sch_tb" 
+ISim P.49d (signature 0xfbc00daa)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/../../../../School/MIPS_Project/MIPS_processor/sign_extend.vhd" into library work
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/../../../../School/MIPS_Project/MIPS_processor/register_file.vhd" into library work
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/../../../../School/MIPS_Project/MIPS_processor/programcounter.vhd" into library work
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/../../../../School/MIPS_Project/MIPS_processor/PCA.vhd" into library work
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/../../../../School/MIPS_Project/MIPS_processor/MUX5.vhd" into library work
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/../../../../School/MIPS_Project/MIPS_processor/MUX.vhd" into library work
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/../../../../School/MIPS_Project/MIPS_processor/jump_adder.vhd" into library work
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/../../../../School/MIPS_Project/MIPS_processor/IMem.vhd" into library work
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/../../../../School/MIPS_Project/MIPS_processor/data_memory.vhd" into library work
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/../../../../School/MIPS_Project/MIPS_processor/Control.vhd" into library work
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/../../../../School/MIPS_Project/MIPS_processor/ALUControl.vhd" into library work
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/../../../../School/MIPS_Project/MIPS_processor/ALU.vhd" into library work
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel.vhf" into library work
+Parsing VHDL file "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 46560 KB
+Fuse CPU Usage: 1800 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity ALU_Control [alu_control_default]
+Compiling architecture behavioral of entity MUX [mux_default]
+Compiling architecture behavioral of entity Control [control_default]
+Compiling architecture behavioral of entity data_memory [data_memory_default]
+Compiling architecture behavioral of entity imem [imem_default]
+Compiling architecture behavioral of entity jump_adder [jump_adder_default]
+Compiling architecture behavioral of entity pc [pc_default]
+Compiling architecture behavioral of entity PCA [pca_default]
+Compiling architecture behavioral of entity register_file [register_file_default]
+Compiling architecture behavioral of entity sign_extend [sign_extend_default]
+Compiling architecture behavioral of entity MUX5 [mux5_default]
+Compiling architecture or2_v of entity OR2 [or2_default]
+Compiling architecture and2_v of entity AND2 [and2_default]
+Compiling architecture and2b1_v of entity AND2B1 [and2b1_default]
+Compiling architecture behavioral of entity toplevel [toplevel_default]
+Compiling architecture behavioral of entity toplevel_toplevel_sch_tb
+Time Resolution for simulation is 1ps.
+Compiled 39 VHDL Units
+Built simulation executable /home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel_toplevel_sch_tb_isim_beh.exe
+Fuse Memory Usage: 101156 KB
+Fuse CPU Usage: 2130 ms
+GCC CPU Usage: 170 ms

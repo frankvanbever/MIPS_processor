@@ -1,0 +1,5 @@
+[Inputs]
+=PC[31:0]=
+[Outputs]
+=PC4[31:0]=
+[BiDir]

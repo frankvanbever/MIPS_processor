@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../../../School/MIPS_Project/MIPS_processor/PCA.vhd -prj MIPS_processor_2 -o PCA.spl -module PCA -template /opt/Xilinx/14.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 PCA.spl /home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/PCA.sym 

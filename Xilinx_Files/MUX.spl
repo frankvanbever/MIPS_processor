@@ -1,0 +1,7 @@
+[Inputs]
+selector
+=vector_in_1[31:0]=
+=vector_in_2[31:0]=
+[Outputs]
+=vector_out[31:0]=
+[BiDir]

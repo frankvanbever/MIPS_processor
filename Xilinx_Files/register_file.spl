@@ -1,0 +1,11 @@
+[Inputs]
+clk
+write_enable
+=Read_reg_1[25:21]=
+=Read_reg_2[20:16]=
+=Write_reg[15:11]=
+=Write_data[31:0]=
+[Outputs]
+=Read_data_1[31:0]=
+=Read_data_2[31:0]=
+[BiDir]

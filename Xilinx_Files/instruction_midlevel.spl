@@ -1,0 +1,6 @@
+[Inputs]
+PCSrc
+=sign_extend[31:0]=
+[Outputs]
+=Instruction[31:0]=
+[BiDir]

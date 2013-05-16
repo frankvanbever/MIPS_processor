@@ -1,0 +1,9 @@
+[Inputs]
+clk
+MemWrite
+MemRead
+=adress[31:0]=
+=write_data[31:0]=
+[Outputs]
+=read_data[31:0]=
+[BiDir]

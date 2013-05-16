@@ -1,0 +1,487 @@
+Release 14.4 Map P.49d (lin)
+Xilinx Mapping Report File for Design 'toplevel'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o toplevel_map.ncd toplevel.ngd toplevel.pcf 
+Target Device  : xc6slx45
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Mon Apr 29 14:20:00 2013
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :   2
+
+Section 1 - Errors
+------------------
+ERROR:Pack:198 - NCD was not produced.  All logic was removed from the design. 
+   This is usually due to having no input or output PAD connections in the
+   design and no nets or symbols marked as 'SAVE'.  You can either add PADs or
+   'SAVE' attributes to the design, or run 'map -u' to disable logic trimming in
+   the mapper.  For more information on trimming issues search the Xilinx
+   Answers database for "ERROR:Pack:198" and read the Master Answer Record for
+   MAP Trimming Issues.
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal RST connected to top level port RST has been
+   removed.
+WARNING:MapLib:701 - Signal CLK connected to top level port CLK has been
+   removed.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 180 block(s) removed
+ 242 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "CLK_BUFGP/IBUFG" is sourceless and has been removed.
+ Sourceless block "CLK_BUFGP/BUFG" (CKBUF) removed.
+  The signal "CLK_BUFGP" is sourceless and has been removed.
+   Sourceless block "XLXI_15/PC_reset" (FF) removed.
+    The signal "XLXI_15/PC_reset" is sourceless and has been removed.
+     Sourceless block "XLXI_15/PC_out_2" (SFF) removed.
+      The signal "XLXI_15/PC_out<2>" is sourceless and has been removed.
+       Sourceless block "XLXI_5/Mram_myMem161" (ROM) removed.
+        The signal "XLXI_5/Mram_myMem16" is sourceless and has been removed.
+       Sourceless block "XLXI_5/Mram_myMem201" (ROM) removed.
+        The signal "XLXI_5/Mram_myMem20" is sourceless and has been removed.
+       Sourceless block "XLXI_5/Mram_myMem241" (ROM) removed.
+        The signal "XLXI_5/Mram_myMem24" is sourceless and has been removed.
+       Sourceless block "XLXI_5/Mram_myMem281" (ROM) removed.
+        The signal "XLXI_5/Mram_myMem28" is sourceless and has been removed.
+         Sourceless block "XLXI_28" (AND) removed.
+          The signal "XLXN_48" is sourceless and has been removed.
+           Sourceless block "XLXI_24" (OR) removed.
+            The signal "XLXN_46" is sourceless and has been removed.
+             Sourceless block "XLXI_19/Mmux_vector_out271" (ROM) removed.
+              The signal "XLXN_57<4>" is sourceless and has been removed.
+               Sourceless block "XLXI_15/PC_out_4" (SFF) removed.
+                The signal "XLXI_15/PC_out<4>" is sourceless and has been removed.
+                 Sourceless block "XLXI_2/_n0075<1>1" (ROM) removed.
+                  The signal "XLXN_35<0>" is sourceless and has been removed.
+                   Sourceless block "XLXI_17/ALU_Zero<31>3" (ROM) removed.
+                    The signal "XLXI_17/ALU_Zero<31>2" is sourceless and has been removed.
+                     Sourceless block "XLXI_17/ALU_Zero<31>7" (ROM) removed.
+                      The signal "XLXN_51" is sourceless and has been removed.
+                       Sourceless block "XLXI_26" (AND) removed.
+                        The signal "XLXN_49" is sourceless and has been removed.
+                   Sourceless block "XLXI_17/ALU_Zero<31>4" (ROM) removed.
+                    The signal "XLXI_17/ALU_Zero<31>3" is sourceless and has been removed.
+                   Sourceless block "XLXI_17/ALU_Zero<31>1" (ROM) removed.
+                    The signal "XLXI_17/ALU_Zero<31>" is sourceless and has been removed.
+                   Sourceless block "XLXI_17/ALU_Zero<31>2_SW0_SW0" (ROM) removed.
+                    The signal "N6" is sourceless and has been removed.
+                 Sourceless block "XLXI_5/Mram_myMem1211" (ROM) removed.
+                  The signal "XLXI_5/Mram_myMem12" is sourceless and has been removed.
+                 Sourceless block "XLXI_7/Madd_PC4_xor<4>_rt" (ROM) removed.
+                  The signal "XLXI_7/Madd_PC4_xor<4>_rt" is sourceless and has been removed.
+                   Sourceless block "XLXI_7/Madd_PC4_xor<4>" (XOR) removed.
+                    The signal "XLXN_20<4>" is sourceless and has been removed.
+                     Sourceless block "XLXI_3/Madd_jmp_adress_xor<4>_rt" (ROM) removed.
+                      The signal "XLXI_3/Madd_jmp_adress_xor<4>_rt" is sourceless and has been
+removed.
+                       Sourceless block "XLXI_3/Madd_jmp_adress_xor<4>" (XOR) removed.
+                        The signal "XLXN_32<4>" is sourceless and has been removed.
+                 Sourceless block "XLXI_17/Mmux_Result81" (ROM) removed.
+                  The signal "XLXN_40<16>" is sourceless and has been removed.
+                 Sourceless block "XLXI_17/Mmux_Result71" (ROM) removed.
+                  The signal "XLXN_40<15>" is sourceless and has been removed.
+                 Sourceless block "XLXI_17/Mmux_Result61" (ROM) removed.
+                  The signal "XLXN_40<14>" is sourceless and has been removed.
+                 Sourceless block "XLXI_17/Mmux_Result51" (ROM) removed.
+                  The signal "XLXN_40<13>" is sourceless and has been removed.
+                 Sourceless block "XLXI_17/Mmux_Result41" (ROM) removed.
+                  The signal "XLXN_40<12>" is sourceless and has been removed.
+                 Sourceless block "XLXI_17/Mmux_Result31" (ROM) removed.
+                  The signal "XLXN_40<11>" is sourceless and has been removed.
+                 Sourceless block "XLXI_17/Mmux_Result21" (ROM) removed.
+                  The signal "XLXN_40<10>" is sourceless and has been removed.
+                 Sourceless block "XLXI_17/Mmux_Result321" (ROM) removed.
+                  The signal "XLXN_40<9>" is sourceless and has been removed.
+                 Sourceless block "XLXI_17/Mmux_Result311" (ROM) removed.
+                  The signal "XLXN_40<8>" is sourceless and has been removed.
+                 Sourceless block "XLXI_17/Mmux_Result301" (ROM) removed.
+                  The signal "XLXN_40<7>" is sourceless and has been removed.
+                 Sourceless block "XLXI_17/Mmux_Result291" (ROM) removed.
+                  The signal "XLXN_40<6>" is sourceless and has been removed.
+                 Sourceless block "XLXI_17/ALU_Zero<31>2_SW0_SW0_SW0" (ROM) removed.
+                  The signal "N8" is sourceless and has been removed.
+                 Sourceless block "XLXI_17/ALU_Zero<31>6_SW0" (ROM) removed.
+                  The signal "N11" is sourceless and has been removed.
+                   Sourceless block "XLXI_17/ALU_Zero<31>6" (ROM) removed.
+                    The signal "XLXI_17/ALU_Zero<31>5" is sourceless and has been removed.
+                 Sourceless block "XLXI_3/Madd_jmp_adress_lut<2>" (ROM) removed.
+                  The signal "XLXI_3/Madd_jmp_adress_lut<2>" is sourceless and has been removed.
+                   Sourceless block "XLXI_3/Madd_jmp_adress_cy<2>" (MUX) removed.
+                    The signal "XLXI_3/Madd_jmp_adress_cy<2>" is sourceless and has been removed.
+                     Sourceless block "XLXI_3/Madd_jmp_adress_cy<3>" (MUX) removed.
+                      The signal "XLXI_3/Madd_jmp_adress_cy<3>" is sourceless and has been removed.
+                     Sourceless block "XLXI_3/Madd_jmp_adress_xor<3>" (XOR) removed.
+                      The signal "XLXN_32<3>" is sourceless and has been removed.
+                       Sourceless block "XLXI_19/Mmux_vector_out261" (ROM) removed.
+                        The signal "XLXN_57<3>" is sourceless and has been removed.
+                         Sourceless block "XLXI_15/PC_out_3" (SFF) removed.
+                          The signal "XLXI_15/PC_out<3>" is sourceless and has been removed.
+                           Sourceless block "XLXI_7/Madd_PC4_cy<3>_rt" (ROM) removed.
+                            The signal "XLXI_7/Madd_PC4_cy<3>_rt" is sourceless and has been removed.
+                             Sourceless block "XLXI_7/Madd_PC4_cy<3>" (MUX) removed.
+                              The signal "XLXI_7/Madd_PC4_cy<3>" is sourceless and has been removed.
+                             Sourceless block "XLXI_7/Madd_PC4_xor<3>" (XOR) removed.
+                              The signal "XLXN_20<3>" is sourceless and has been removed.
+                               Sourceless block "XLXI_3/Madd_jmp_adress_cy<3>_rt" (ROM) removed.
+                                The signal "XLXI_3/Madd_jmp_adress_cy<3>_rt" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/ALU_Zero<31>5" (ROM) removed.
+                            The signal "XLXI_17/ALU_Zero<31>4" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result251" (ROM) removed.
+                            The signal "XLXN_40<31>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result241" (ROM) removed.
+                            The signal "XLXN_40<30>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result221" (ROM) removed.
+                            The signal "XLXN_40<29>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result211" (ROM) removed.
+                            The signal "XLXN_40<28>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result201" (ROM) removed.
+                            The signal "XLXN_40<27>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result191" (ROM) removed.
+                            The signal "XLXN_40<26>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result181" (ROM) removed.
+                            The signal "XLXN_40<25>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result171" (ROM) removed.
+                            The signal "XLXN_40<24>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result161" (ROM) removed.
+                            The signal "XLXN_40<23>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result151" (ROM) removed.
+                            The signal "XLXN_40<22>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result141" (ROM) removed.
+                            The signal "XLXN_40<21>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result131" (ROM) removed.
+                            The signal "XLXN_40<20>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result111" (ROM) removed.
+                            The signal "XLXN_40<19>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result101" (ROM) removed.
+                            The signal "XLXN_40<18>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result91" (ROM) removed.
+                            The signal "XLXN_40<17>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result281" (ROM) removed.
+                            The signal "XLXN_40<5>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result271" (ROM) removed.
+                            The signal "XLXN_40<4>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result261" (ROM) removed.
+                            The signal "XLXN_40<3>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result231" (ROM) removed.
+                            The signal "XLXN_40<2>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result121" (ROM) removed.
+                            The signal "XLXN_40<1>" is sourceless and has been removed.
+                           Sourceless block "XLXI_17/Mmux_Result11" (ROM) removed.
+                            The signal "XLXN_40<0>" is sourceless and has been removed.
+                   Sourceless block "XLXI_3/Madd_jmp_adress_xor<2>" (XOR) removed.
+                    The signal "XLXN_32<2>" is sourceless and has been removed.
+                     Sourceless block "XLXI_19/Mmux_vector_out231" (ROM) removed.
+                      The signal "XLXN_57<2>" is sourceless and has been removed.
+       Sourceless block "XLXI_7/Madd_PC4_lut<2>_INV_0" (BUF) removed.
+        The signal "XLXI_7/Madd_PC4_lut<2>" is sourceless and has been removed.
+         Sourceless block "XLXI_7/Madd_PC4_cy<2>" (MUX) removed.
+          The signal "XLXI_7/Madd_PC4_cy<2>" is sourceless and has been removed.
+         Sourceless block "XLXI_7/Madd_PC4_xor<2>" (XOR) removed.
+          The signal "XLXN_20<2>" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "RST_IBUF" is unused and has been removed.
+ Unused block "RST_IBUF" (BUF) removed.
+  The signal "RST" is unused and has been removed.
+   Unused block "RST" (PAD) removed.
+The signal "XLXN_21<31>" is unused and has been removed.
+The signal "XLXN_21<30>" is unused and has been removed.
+The signal "XLXN_21<29>" is unused and has been removed.
+The signal "XLXN_21<28>" is unused and has been removed.
+The signal "XLXN_21<27>" is unused and has been removed.
+The signal "XLXN_21<26>" is unused and has been removed.
+The signal "XLXN_21<25>" is unused and has been removed.
+The signal "XLXN_21<24>" is unused and has been removed.
+The signal "XLXN_21<23>" is unused and has been removed.
+The signal "XLXN_21<22>" is unused and has been removed.
+The signal "XLXN_21<21>" is unused and has been removed.
+The signal "XLXN_21<20>" is unused and has been removed.
+The signal "XLXN_21<19>" is unused and has been removed.
+The signal "XLXN_21<18>" is unused and has been removed.
+The signal "XLXN_21<17>" is unused and has been removed.
+The signal "XLXN_21<16>" is unused and has been removed.
+The signal "XLXN_21<15>" is unused and has been removed.
+The signal "XLXN_21<14>" is unused and has been removed.
+The signal "XLXN_21<13>" is unused and has been removed.
+The signal "XLXN_21<12>" is unused and has been removed.
+The signal "XLXN_21<11>" is unused and has been removed.
+The signal "XLXN_21<10>" is unused and has been removed.
+The signal "XLXN_21<9>" is unused and has been removed.
+The signal "XLXN_21<8>" is unused and has been removed.
+The signal "XLXN_21<7>" is unused and has been removed.
+The signal "XLXN_21<6>" is unused and has been removed.
+The signal "XLXN_21<5>" is unused and has been removed.
+The signal "XLXN_21<4>" is unused and has been removed.
+The signal "XLXN_21<3>" is unused and has been removed.
+The signal "XLXN_21<2>" is unused and has been removed.
+The signal "XLXN_21<1>" is unused and has been removed.
+The signal "XLXN_21<0>" is unused and has been removed.
+The signal "XLXN_27<31>" is unused and has been removed.
+The signal "XLXN_27<30>" is unused and has been removed.
+The signal "XLXN_27<29>" is unused and has been removed.
+The signal "XLXN_27<28>" is unused and has been removed.
+The signal "XLXN_27<27>" is unused and has been removed.
+The signal "XLXN_27<26>" is unused and has been removed.
+The signal "XLXN_27<25>" is unused and has been removed.
+The signal "XLXN_27<24>" is unused and has been removed.
+The signal "XLXN_27<23>" is unused and has been removed.
+The signal "XLXN_27<22>" is unused and has been removed.
+The signal "XLXN_27<21>" is unused and has been removed.
+The signal "XLXN_27<20>" is unused and has been removed.
+The signal "XLXN_27<19>" is unused and has been removed.
+The signal "XLXN_27<18>" is unused and has been removed.
+The signal "XLXN_27<17>" is unused and has been removed.
+The signal "XLXN_27<16>" is unused and has been removed.
+The signal "XLXN_27<15>" is unused and has been removed.
+The signal "XLXN_27<14>" is unused and has been removed.
+The signal "XLXN_27<13>" is unused and has been removed.
+The signal "XLXN_27<12>" is unused and has been removed.
+The signal "XLXN_27<11>" is unused and has been removed.
+The signal "XLXN_27<10>" is unused and has been removed.
+The signal "XLXN_27<9>" is unused and has been removed.
+The signal "XLXN_27<8>" is unused and has been removed.
+The signal "XLXN_27<7>" is unused and has been removed.
+The signal "XLXN_27<6>" is unused and has been removed.
+The signal "XLXN_27<5>" is unused and has been removed.
+The signal "XLXN_27<4>" is unused and has been removed.
+The signal "XLXN_27<3>" is unused and has been removed.
+The signal "XLXN_27<2>" is unused and has been removed.
+The signal "XLXN_27<1>" is unused and has been removed.
+The signal "XLXN_27<0>" is unused and has been removed.
+The signal "XLXN_35<1>" is unused and has been removed.
+ Unused block "XST_VCC" (ONE) removed.
+The signal "XLXI_5/Mram_myMem1" is unused and has been removed.
+ Unused block "XST_GND" (ZERO) removed.
+The signal "XLXI_15/reset_inv" is unused and has been removed.
+ Unused block "XLXI_15/reset_inv1_INV_0" (BUF) removed.
+The signal "XLXI_17/Mmux__n0032_rs_lut<31>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_lut<31>" (ROM) removed.
+The signal "XLXI_17/Mmux__n0032_rs_cy<30>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_cy<30>" (MUX) removed.
+  The signal "XLXI_17/Mmux__n0032_rs_cy<29>" is unused and has been removed.
+   Unused block "XLXI_17/Mmux__n0032_rs_cy<29>" (MUX) removed.
+    The signal "XLXI_17/Mmux__n0032_rs_cy<28>" is unused and has been removed.
+     Unused block "XLXI_17/Mmux__n0032_rs_cy<28>" (MUX) removed.
+      The signal "XLXI_17/Mmux__n0032_rs_cy<27>" is unused and has been removed.
+       Unused block "XLXI_17/Mmux__n0032_rs_cy<27>" (MUX) removed.
+        The signal "XLXI_17/Mmux__n0032_rs_cy<26>" is unused and has been removed.
+         Unused block "XLXI_17/Mmux__n0032_rs_cy<26>" (MUX) removed.
+          The signal "XLXI_17/Mmux__n0032_rs_cy<25>" is unused and has been removed.
+           Unused block "XLXI_17/Mmux__n0032_rs_cy<25>" (MUX) removed.
+            The signal "XLXI_17/Mmux__n0032_rs_cy<24>" is unused and has been removed.
+             Unused block "XLXI_17/Mmux__n0032_rs_cy<24>" (MUX) removed.
+              The signal "XLXI_17/Mmux__n0032_rs_cy<23>" is unused and has been removed.
+               Unused block "XLXI_17/Mmux__n0032_rs_cy<23>" (MUX) removed.
+                The signal "XLXI_17/Mmux__n0032_rs_cy<22>" is unused and has been removed.
+                 Unused block "XLXI_17/Mmux__n0032_rs_cy<22>" (MUX) removed.
+                  The signal "XLXI_17/Mmux__n0032_rs_cy<21>" is unused and has been removed.
+                   Unused block "XLXI_17/Mmux__n0032_rs_cy<21>" (MUX) removed.
+                    The signal "XLXI_17/Mmux__n0032_rs_cy<20>" is unused and has been removed.
+                     Unused block "XLXI_17/Mmux__n0032_rs_cy<20>" (MUX) removed.
+                      The signal "XLXI_17/Mmux__n0032_rs_cy<19>" is unused and has been removed.
+                       Unused block "XLXI_17/Mmux__n0032_rs_cy<19>" (MUX) removed.
+                        The signal "XLXI_17/Mmux__n0032_rs_cy<18>" is unused and has been removed.
+                         Unused block "XLXI_17/Mmux__n0032_rs_cy<18>" (MUX) removed.
+                          The signal "XLXI_17/Mmux__n0032_rs_cy<17>" is unused and has been removed.
+                           Unused block "XLXI_17/Mmux__n0032_rs_cy<17>" (MUX) removed.
+                            The signal "XLXI_17/Mmux__n0032_rs_cy<16>" is unused and has been removed.
+                             Unused block "XLXI_17/Mmux__n0032_rs_cy<16>" (MUX) removed.
+                              The signal "XLXI_17/Mmux__n0032_rs_cy<15>" is unused and has been removed.
+                               Unused block "XLXI_17/Mmux__n0032_rs_cy<15>" (MUX) removed.
+                                The signal "XLXI_17/Mmux__n0032_rs_cy<14>" is unused and has been removed.
+                                 Unused block "XLXI_17/Mmux__n0032_rs_cy<14>" (MUX) removed.
+                                  The signal "XLXI_17/Mmux__n0032_rs_cy<13>" is unused and has been removed.
+                                   Unused block "XLXI_17/Mmux__n0032_rs_cy<13>" (MUX) removed.
+                                    The signal "XLXI_17/Mmux__n0032_rs_cy<12>" is unused and has been removed.
+                                     Unused block "XLXI_17/Mmux__n0032_rs_cy<12>" (MUX) removed.
+                                      The signal "XLXI_17/Mmux__n0032_rs_cy<11>" is unused and has been removed.
+                                       Unused block "XLXI_17/Mmux__n0032_rs_cy<11>" (MUX) removed.
+                                        The signal "XLXI_17/Mmux__n0032_rs_cy<10>" is unused and has been removed.
+                                         Unused block "XLXI_17/Mmux__n0032_rs_cy<10>" (MUX) removed.
+                                          The signal "XLXI_17/Mmux__n0032_rs_cy<9>" is unused and has been removed.
+                                           Unused block "XLXI_17/Mmux__n0032_rs_cy<9>" (MUX) removed.
+                                            The signal "XLXI_17/Mmux__n0032_rs_cy<8>" is unused and has been removed.
+                                             Unused block "XLXI_17/Mmux__n0032_rs_cy<8>" (MUX) removed.
+                                              The signal "XLXI_17/Mmux__n0032_rs_cy<7>" is unused and has been removed.
+                                               Unused block "XLXI_17/Mmux__n0032_rs_cy<7>" (MUX) removed.
+                                                The signal "XLXI_17/Mmux__n0032_rs_cy<6>" is unused and has been removed.
+                                                 Unused block "XLXI_17/Mmux__n0032_rs_cy<6>" (MUX) removed.
+*The signal "XLXI_17/Mmux__n0032_rs_cy<5>" is unused and has been removed.
+* Unused block "XLXI_17/Mmux__n0032_rs_cy<5>" (MUX) removed.
+*  The signal "XLXI_17/Mmux__n0032_rs_cy<4>" is unused and has been removed.
+*   Unused block "XLXI_17/Mmux__n0032_rs_cy<4>" (MUX) removed.
+*    The signal "XLXI_17/Mmux__n0032_rs_cy<3>" is unused and has been removed.
+*     Unused block "XLXI_17/Mmux__n0032_rs_cy<3>" (MUX) removed.
+*      The signal "XLXI_17/Mmux__n0032_rs_cy<2>" is unused and has been removed.
+*       Unused block "XLXI_17/Mmux__n0032_rs_cy<2>" (MUX) removed.
+*        The signal "XLXI_17/Mmux__n0032_rs_cy<1>" is unused and has been removed.
+*         Unused block "XLXI_17/Mmux__n0032_rs_cy<1>" (MUX) removed.
+*          The signal "XLXI_17/Mmux__n0032_rs_cy<0>" is unused and has been removed.
+*           Unused block "XLXI_17/Mmux__n0032_rs_cy<0>" (MUX) removed.
+*            The signal "XLXI_17/Mmux__n0032_rs_lut<0>" is unused and has been removed.
+*             Unused block "XLXI_17/Mmux__n0032_rs_lut<0>" (ROM) removed.
+*          The signal "XLXI_17/Mmux__n0032_rs_lut<1>" is unused and has been removed.
+*           Unused block "XLXI_17/Mmux__n0032_rs_lut<1>" (ROM) removed.
+*        The signal "XLXI_17/Mmux__n0032_rs_lut<2>" is unused and has been removed.
+*         Unused block "XLXI_17/Mmux__n0032_rs_lut<2>" (ROM) removed.
+*      The signal "XLXI_17/Mmux__n0032_rs_lut<3>" is unused and has been removed.
+*       Unused block "XLXI_17/Mmux__n0032_rs_lut<3>" (ROM) removed.
+*    The signal "XLXI_17/Mmux__n0032_rs_lut<4>" is unused and has been removed.
+*     Unused block "XLXI_17/Mmux__n0032_rs_lut<4>" (ROM) removed.
+*  The signal "XLXI_17/Mmux__n0032_rs_lut<5>" is unused and has been removed.
+*   Unused block "XLXI_17/Mmux__n0032_rs_lut<5>" (ROM) removed.
+*The signal "XLXI_17/Mmux__n0032_rs_lut<6>" is unused and has been removed.
+* Unused block "XLXI_17/Mmux__n0032_rs_lut<6>" (ROM) removed.
+                                                The signal "XLXI_17/Mmux__n0032_rs_lut<7>" is unused and has been removed.
+                                                 Unused block "XLXI_17/Mmux__n0032_rs_lut<7>" (ROM) removed.
+                                              The signal "XLXI_17/Mmux__n0032_rs_lut<8>" is unused and has been removed.
+                                               Unused block "XLXI_17/Mmux__n0032_rs_lut<8>" (ROM) removed.
+                                            The signal "XLXI_17/Mmux__n0032_rs_lut<9>" is unused and has been removed.
+                                             Unused block "XLXI_17/Mmux__n0032_rs_lut<9>" (ROM) removed.
+                                          The signal "XLXI_17/Mmux__n0032_rs_lut<10>" is unused and has been removed.
+                                           Unused block "XLXI_17/Mmux__n0032_rs_lut<10>" (ROM) removed.
+                                        The signal "XLXI_17/Mmux__n0032_rs_lut<11>" is unused and has been removed.
+                                         Unused block "XLXI_17/Mmux__n0032_rs_lut<11>" (ROM) removed.
+                                      The signal "XLXI_17/Mmux__n0032_rs_lut<12>" is unused and has been removed.
+                                       Unused block "XLXI_17/Mmux__n0032_rs_lut<12>" (ROM) removed.
+                                    The signal "XLXI_17/Mmux__n0032_rs_lut<13>" is unused and has been removed.
+                                     Unused block "XLXI_17/Mmux__n0032_rs_lut<13>" (ROM) removed.
+                                  The signal "XLXI_17/Mmux__n0032_rs_lut<14>" is unused and has been removed.
+                                   Unused block "XLXI_17/Mmux__n0032_rs_lut<14>" (ROM) removed.
+                                The signal "XLXI_17/Mmux__n0032_rs_lut<15>" is unused and has been removed.
+                                 Unused block "XLXI_17/Mmux__n0032_rs_lut<15>" (ROM) removed.
+                              The signal "XLXI_17/Mmux__n0032_rs_lut<16>" is unused and has been removed.
+                               Unused block "XLXI_17/Mmux__n0032_rs_lut<16>" (ROM) removed.
+                            The signal "XLXI_17/Mmux__n0032_rs_lut<17>" is unused and has been removed.
+                             Unused block "XLXI_17/Mmux__n0032_rs_lut<17>" (ROM) removed.
+                          The signal "XLXI_17/Mmux__n0032_rs_lut<18>" is unused and has been removed.
+                           Unused block "XLXI_17/Mmux__n0032_rs_lut<18>" (ROM) removed.
+                        The signal "XLXI_17/Mmux__n0032_rs_lut<19>" is unused and has been removed.
+                         Unused block "XLXI_17/Mmux__n0032_rs_lut<19>" (ROM) removed.
+                      The signal "XLXI_17/Mmux__n0032_rs_lut<20>" is unused and has been removed.
+                       Unused block "XLXI_17/Mmux__n0032_rs_lut<20>" (ROM) removed.
+                    The signal "XLXI_17/Mmux__n0032_rs_lut<21>" is unused and has been removed.
+                     Unused block "XLXI_17/Mmux__n0032_rs_lut<21>" (ROM) removed.
+                  The signal "XLXI_17/Mmux__n0032_rs_lut<22>" is unused and has been removed.
+                   Unused block "XLXI_17/Mmux__n0032_rs_lut<22>" (ROM) removed.
+                The signal "XLXI_17/Mmux__n0032_rs_lut<23>" is unused and has been removed.
+                 Unused block "XLXI_17/Mmux__n0032_rs_lut<23>" (ROM) removed.
+              The signal "XLXI_17/Mmux__n0032_rs_lut<24>" is unused and has been removed.
+               Unused block "XLXI_17/Mmux__n0032_rs_lut<24>" (ROM) removed.
+            The signal "XLXI_17/Mmux__n0032_rs_lut<25>" is unused and has been removed.
+             Unused block "XLXI_17/Mmux__n0032_rs_lut<25>" (ROM) removed.
+          The signal "XLXI_17/Mmux__n0032_rs_lut<26>" is unused and has been removed.
+           Unused block "XLXI_17/Mmux__n0032_rs_lut<26>" (ROM) removed.
+        The signal "XLXI_17/Mmux__n0032_rs_lut<27>" is unused and has been removed.
+         Unused block "XLXI_17/Mmux__n0032_rs_lut<27>" (ROM) removed.
+      The signal "XLXI_17/Mmux__n0032_rs_lut<28>" is unused and has been removed.
+       Unused block "XLXI_17/Mmux__n0032_rs_lut<28>" (ROM) removed.
+    The signal "XLXI_17/Mmux__n0032_rs_lut<29>" is unused and has been removed.
+     Unused block "XLXI_17/Mmux__n0032_rs_lut<29>" (ROM) removed.
+  The signal "XLXI_17/Mmux__n0032_rs_lut<30>" is unused and has been removed.
+   Unused block "XLXI_17/Mmux__n0032_rs_lut<30>" (ROM) removed.
+The signal "XLXI_17/_n0032<0>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<0>" (XOR) removed.
+The signal "XLXI_17/_n0032<1>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<1>" (XOR) removed.
+The signal "XLXI_17/_n0032<2>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<2>" (XOR) removed.
+The signal "XLXI_17/_n0032<3>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<3>" (XOR) removed.
+The signal "XLXI_17/_n0032<4>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<4>" (XOR) removed.
+The signal "XLXI_17/_n0032<5>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<5>" (XOR) removed.
+The signal "XLXI_17/_n0032<6>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<6>" (XOR) removed.
+The signal "XLXI_17/_n0032<7>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<7>" (XOR) removed.
+The signal "XLXI_17/_n0032<8>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<8>" (XOR) removed.
+The signal "XLXI_17/_n0032<9>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<9>" (XOR) removed.
+The signal "XLXI_17/_n0032<10>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<10>" (XOR) removed.
+The signal "XLXI_17/_n0032<11>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<11>" (XOR) removed.
+The signal "XLXI_17/_n0032<12>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<12>" (XOR) removed.
+The signal "XLXI_17/_n0032<13>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<13>" (XOR) removed.
+The signal "XLXI_17/_n0032<14>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<14>" (XOR) removed.
+The signal "XLXI_17/_n0032<15>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<15>" (XOR) removed.
+The signal "XLXI_17/_n0032<16>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<16>" (XOR) removed.
+The signal "XLXI_17/_n0032<17>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<17>" (XOR) removed.
+The signal "XLXI_17/_n0032<18>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<18>" (XOR) removed.
+The signal "XLXI_17/_n0032<19>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<19>" (XOR) removed.
+The signal "XLXI_17/_n0032<20>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<20>" (XOR) removed.
+The signal "XLXI_17/_n0032<21>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<21>" (XOR) removed.
+The signal "XLXI_17/_n0032<22>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<22>" (XOR) removed.
+The signal "XLXI_17/_n0032<23>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<23>" (XOR) removed.
+The signal "XLXI_17/_n0032<24>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<24>" (XOR) removed.
+The signal "XLXI_17/_n0032<25>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<25>" (XOR) removed.
+The signal "XLXI_17/_n0032<26>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<26>" (XOR) removed.
+The signal "XLXI_17/_n0032<27>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<27>" (XOR) removed.
+The signal "XLXI_17/_n0032<28>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<28>" (XOR) removed.
+The signal "XLXI_17/_n0032<29>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<29>" (XOR) removed.
+The signal "XLXI_17/_n0032<30>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<30>" (XOR) removed.
+The signal "XLXI_17/_n0032<31>" is unused and has been removed.
+ Unused block "XLXI_17/Mmux__n0032_rs_xor<31>" (XOR) removed.
+The signal "CLK" is unused and has been removed.
+ Unused block "CLK" (PAD) removed.
+The signal "N0" is unused and has been removed.
+ Unused block "XLXI_17/ALU_Zero<31>4_SW0" (ROM) removed.
+The signal "N2" is unused and has been removed.
+ Unused block "XLXI_17/ALU_Zero<31>1_SW0" (ROM) removed.
+Unused block "CLK_BUFGP/IBUFG" (CKBUF) removed.
+Unused block "XLXI_8/Mram_register_file" (RAMB8BWER) removed.
+Unused block "XLXI_8/Mram_register_file1" (RAMB8BWER) removed.

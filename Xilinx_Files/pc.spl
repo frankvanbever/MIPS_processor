@@ -1,0 +1,7 @@
+[Inputs]
+clk
+reset
+=PC_in[31:0]=
+[Outputs]
+=PC_out[31:0]=
+[BiDir]

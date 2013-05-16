@@ -1,0 +1,5 @@
+[Inputs]
+=instruction_in[15:0]=
+[Outputs]
+=instruction_out[31:0]=
+[BiDir]

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel_toplevel_sch_tb_isim_beh.exe" -prj "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel_toplevel_sch_tb_beh.prj" "work.toplevel_toplevel_sch_tb" 

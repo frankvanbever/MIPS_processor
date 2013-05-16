@@ -1,0 +1,14 @@
+[Inputs]
+=Instruction[31:26]=
+=Instruction_funct[5:0]=
+[Outputs]
+RegDst
+ALUSrc
+MemtoReg
+RegWrite
+MemRead
+MemWrite
+Branch
+Branch_ne
+=ALUop[1:0]=
+[BiDir]

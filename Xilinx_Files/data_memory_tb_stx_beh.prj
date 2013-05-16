@@ -1,0 +1,2 @@
+vhdl isim_temp "../../../../School/MIPS_Project/MIPS_processor/data_memory.vhd"
+vhdl isim_temp "../../../../School/MIPS_Project/MIPS_processor/testbenches/data_memory_tb.vhd"

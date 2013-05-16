@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../../../School/MIPS_Project/MIPS_processor/IMem.vhd -prj MIPS_processor_2 -o imem.spl -module imem -template /opt/Xilinx/14.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 imem.spl /home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/imem.sym 

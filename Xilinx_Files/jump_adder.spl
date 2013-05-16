@@ -1,0 +1,6 @@
+[Inputs]
+=instruction[31:0]=
+=jmp_offset[31:0]=
+[Outputs]
+=jmp_adress[31:0]=
+[BiDir]

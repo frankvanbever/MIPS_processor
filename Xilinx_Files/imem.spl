@@ -1,0 +1,5 @@
+[Inputs]
+=pc[31:0]=
+[Outputs]
+=Instruction[31:0]=
+[BiDir]

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel_toplevel_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="toplevel_toplevel_sch_tb" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="divider6" type="divider">
+      <obj_property name="label">imem</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_5/pc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_5/instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider14" type="divider">
+      <obj_property name="label">rFile</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_8/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_8/read_reg_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_reg_1[25:21]</obj_property>
+      <obj_property name="ObjectShortName">read_reg_1[25:21]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_8/read_reg_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_reg_2[20:16]</obj_property>
+      <obj_property name="ObjectShortName">read_reg_2[20:16]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_8/write_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_reg[15:11]</obj_property>
+      <obj_property name="ObjectShortName">write_reg[15:11]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_8/write_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_8/read_data_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_data_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data_1[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_8/read_data_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_data_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data_2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_8/write_enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_enable</obj_property>
+      <obj_property name="ObjectShortName">write_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider7" type="divider">
+      <obj_property name="label">ALU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_17/alu_input_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_input_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_input_1[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_17/alu_input_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_input_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_input_2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_17/alu_zero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_zero</obj_property>
+      <obj_property name="ObjectShortName">alu_zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_17/alu_result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_result[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_toplevel_sch_tb/UUT/XLXI_17/alu_control_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_control_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_control_in[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider13" type="divider">
+      <obj_property name="label"></obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,8 @@
+vhdtdtfi -lib work ../../../../School/MIPS_Project/MIPS_processor/MUX5.vhd -prj MIPS_processor_2 -o MUX5.spl -module MUX5 -template /opt/Xilinx/14.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w MUX5.spl /home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/MUX5.sym 
+vhdtdtfi -lib work ../../../../School/MIPS_Project/MIPS_processor/MUX5.vhd -prj MIPS_processor_2 -o MUX5.spl -module MUX5 -template /opt/Xilinx/14.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w MUX5.spl /home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/MUX5.sym 
+vhdtdtfi -lib work ../../../../School/MIPS_Project/MIPS_processor/MUX5.vhd -prj MIPS_processor_2 -o MUX5.spl -module MUX5 -template /opt/Xilinx/14.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w MUX5.spl /home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/MUX5.sym 
+vhdtdtfi -lib work ../../../../School/MIPS_Project/MIPS_processor/MUX5.vhd -prj MIPS_processor_2 -o MUX5.spl -module MUX5 -template /opt/Xilinx/14.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w MUX5.spl /home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/MUX5.sym 

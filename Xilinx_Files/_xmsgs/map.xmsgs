@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="MapLib" num="562" delta="new" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">RST</arg> connected to top level port <arg fmt="%s" index="2">RST</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">CLK</arg> connected to top level port <arg fmt="%s" index="2">CLK</arg> has been removed.
+</msg>
+
+<msg type="error" file="Pack" num="198" delta="new" >NCD was not produced.  All logic was removed from the design.  This is usually due to having no input or output PAD connections in the design and no nets or symbols marked as &apos;SAVE&apos;.  You can either add PADs or &apos;SAVE&apos; attributes to the design, or run &apos;map -u&apos; to disable logic trimming in the mapper.  For more information on trimming issues search the Xilinx Answers database for &quot;ERROR:Pack:198&quot; and read the Master Answer Record for MAP Trimming Issues.
+</msg>
+
+</messages>
+
