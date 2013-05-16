@@ -122,15 +122,13 @@ begin  -- behavioral
   end process read_reg_proc;
   
   
-  write_reg_proc : process (clk)
+  write_reg_proc : process (clk,Write_data)
   begin  -- process reg_file_proc
-    if clk'event and clk = '1' then     -- rising clock edge
       if write_enable = '1' then
         if Write_reg /= X"00000000" then
           register_file(conv_integer(Write_reg)) := Write_data;
         end if;
       end if;
-    end if;
   end process write_reg_proc;
 
 end behavioral;

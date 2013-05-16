@@ -121,16 +121,18 @@ shared variable dataMem : memory_array :=
 	 	
 		---------------------------------------------------------------
                 --! process that governs reading from or writing to the memory.
-                --! Every clockcycle the proces sees in which mode it is and
                 --! reads or writes values accordingly.
                 ---------------------------------------------------------------
-		data_mem_proc : process(MemRead,MemWrite,adress,write_data)
+		data_mem_proc : process(MemRead,MemWrite,write_data,adress)
 		begin
+			-- trick to avoid undefined address error(should give no problems,only delays the read/write untill adress is defined well)
+			if(conv_integer(adress)<63)then
 				if (MemRead = '1') and (MemWrite = '0') then 
 					read_data <= dataMem(conv_integer(adress));
 				elsif (MemRead = '0') and (MemWrite = '1') then
 					dataMem(conv_integer(adress)) := write_data;
 				end if;
+			end if;
 		end process;
 	end behavioral;
 	
