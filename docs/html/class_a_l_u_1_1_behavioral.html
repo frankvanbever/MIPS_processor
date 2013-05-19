@@ -25,14 +25,12 @@
  <tbody>
  <tr style="height: 56px;">
   
-  <td id="projectlogo"><img alt="Logo" src="ehb.jpg"/></td>
-  
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">ROLLMIPS
-   &#160;<span id="projectnumber">0.0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">MIPS processor implementation in VHDL</div>
+   <div id="projectbrief">MIPS processor implementation</div>
   </td>
   
   
@@ -115,55 +113,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="Processes"></a>
 Processes</h2></td></tr>
- <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_l_u_1_1_behavioral.html#a9d398c4f01ad1a21234856b1403845fc">ALU_Result_Calc</a>&#160;</td><td class="memItemRight" valign="bottom"><b> ( <b><b><a class="el" href="class_a_l_u.html#ad506dc3c4d5a49b33075dcf2ea057306">ALU_Input_1</a></b> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar">,</span><b><a class="el" href="class_a_l_u.html#a657f38dca67063612c1c3d9327260efd">ALU_Input_2</a></b> <span class="vhdlchar"> </span><span class="vhdlchar">,</span><b><a class="el" href="class_a_l_u.html#a160e9acd866b7a383a28d77c159bd52a">ALU_Control_In</a></b> <span class="vhdlchar"> </span></b> )</b></td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d398c4f01ad1a21234856b1403845fc"></a><!-- doxytag: member="ALU::Behavioral::ALU_Result_Calc" ref="a9d398c4f01ad1a21234856b1403845fc" args="ALU_Input_1,ALU_Input_2,ALU_Control_In" -->
+<a class="el" href="class_a_l_u_1_1_behavioral.html#a9d398c4f01ad1a21234856b1403845fc">ALU_Result_Calc</a>&#160;</td><td class="memItemRight" valign="bottom"><b> ( <b><b><a class="el" href="class_a_l_u.html#ad506dc3c4d5a49b33075dcf2ea057306">ALU_Input_1</a></b> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar">,</span><b><a class="el" href="class_a_l_u.html#a657f38dca67063612c1c3d9327260efd">ALU_Input_2</a></b> <span class="vhdlchar"> </span><span class="vhdlchar">,</span><b><a class="el" href="class_a_l_u.html#a160e9acd866b7a383a28d77c159bd52a">ALU_Control_In</a></b> <span class="vhdlchar"> </span></b> )</b></td></tr>
 <tr><td colspan="2"><h2><a name="Shared Variables"></a>
 Shared Variables</h2></td></tr>
- <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_l_u_1_1_behavioral.html#afc4b6c182f9d7ec900d031c30ae7fd43">Result</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">Std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Register to store Result of alu.  <a href="#afc4b6c182f9d7ec900d031c30ae7fd43"></a><br/></td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc4b6c182f9d7ec900d031c30ae7fd43"></a><!-- doxytag: member="ALU::Behavioral::Result" ref="afc4b6c182f9d7ec900d031c30ae7fd43" args="" -->
+<a class="el" href="class_a_l_u_1_1_behavioral.html#afc4b6c182f9d7ec900d031c30ae7fd43">Result</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">Std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Register to store Result of alu. <br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>This is a 32 bit <a class="el" href="class_a_l_u.html" title="Use standard library.">ALU</a> for the MIPS processor. </p>
 <p>the <a class="el" href="class_a_l_u.html" title="Use standard library.">ALU</a> is able to do following functions: AND,OR, add, substract, set on less then, NOR (see <a class="el" href="class_a_l_u___control.html" title="Use standard library.">ALU_Control</a>)</p>
 <p>the zero output bit is set if the result of the <a class="el" href="class_a_l_u.html" title="Use standard library.">ALU</a> is 0 </p>
-</div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a9d398c4f01ad1a21234856b1403845fc"></a><!-- doxytag: member="ALU::Behavioral::ALU_Result_Calc" ref="a9d398c4f01ad1a21234856b1403845fc" args="ALU_Input_1,ALU_Input_2,ALU_Control_In" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"> <b><span class="vhdlchar"> </span></b> ALU_Result_Calc          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><b><b><a class="el" href="class_a_l_u.html#ad506dc3c4d5a49b33075dcf2ea057306">ALU_Input_1</a></b> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar">,</span><b><a class="el" href="class_a_l_u.html#a657f38dca67063612c1c3d9327260efd">ALU_Input_2</a></b> <span class="vhdlchar"> </span><span class="vhdlchar">,</span><b><a class="el" href="class_a_l_u.html#a160e9acd866b7a383a28d77c159bd52a">ALU_Control_In</a></b> <span class="vhdlchar"> </span></b>  <em></em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [Process]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="afc4b6c182f9d7ec900d031c30ae7fd43"></a><!-- doxytag: member="ALU::Behavioral::Result" ref="afc4b6c182f9d7ec900d031c30ae7fd43" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_a_l_u_1_1_behavioral.html#afc4b6c182f9d7ec900d031c30ae7fd43">Result</a> <b><span class="comment">Std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b> <code> [Shared Variable]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Register to store Result of alu. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_a_l_u_8vhd.html">ALU.vhd</a></li>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>ALU.vhd</li>
 </ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->
@@ -183,7 +146,7 @@ Shared Variables</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 17 2013 14:34:56 for ROLLMIPS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 19 2013 13:24:51 for ROLLMIPS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
