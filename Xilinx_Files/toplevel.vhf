@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : toplevel.vhf
--- /___/   /\     Timestamp : 05/08/2013 15:44:39
+-- /___/   /\     Timestamp : 05/19/2013 09:56:28
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl /home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel.vhf -w /home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel.sch
+--Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl /home/frank/School/MIPS_processor/Xilinx_Files/toplevel.vhf -w /home/frank/School/MIPS_processor/Xilinx_Files/toplevel.sch
 --Design Name: toplevel
 --Device: spartan6
 --Purpose:

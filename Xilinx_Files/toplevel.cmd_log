@@ -17,3 +17,4 @@ xst -intstyle ise -ifn "/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 toplevel.ngc toplevel.ngd  
 map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o toplevel_map.ncd toplevel.ngd toplevel.pcf 
 sch2sym -intstyle ise -family spartan6 -w -refsym toplevel /home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel.sch /home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel.sym 
+xst -intstyle ise -ifn "/home/frank/School/MIPS_processor/Xilinx_Files/toplevel.xst" -ofn "/home/frank/School/MIPS_processor/Xilinx_Files/toplevel.syr" 

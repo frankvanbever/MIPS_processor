@@ -98,10 +98,10 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="toplevel_map.ngm" xil_pn:subbranch="Map"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="toplevel_ngdbuild.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="toplevel_summary.html"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="toplevel_toplevel_sch_tb_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="toplevel_toplevel_sch_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="toplevel_toplevel_sch_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="toplevel_toplevel_sch_tb_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="toplevel_toplevel_sch_tb_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="toplevel_toplevel_sch_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="toplevel_xst.xrpt"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
@@ -114,33 +114,33 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1368685676" xil_pn:in_ck="-6376313335960960967" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1368685676">
+    <transform xil_pn:end_ts="1368955153" xil_pn:in_ck="-3737508101822263839" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1368955153">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/ALU.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/ALUControl.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/Control.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/IMem.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/MUX.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/MUX5.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/PCA.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/data_memory.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/jump_adder.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/programcounter.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/register_file.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/sign_extend.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/ALU_Control_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/ALU_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/Control_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/Imem_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/PCAdder_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/PCounte_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/data_memory_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/jump_adder_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/mips_proc_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/mux_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/register_file_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/sign_extend_tb.vhd"/>
+      <outfile xil_pn:name="../ALU.vhd"/>
+      <outfile xil_pn:name="../ALUControl.vhd"/>
+      <outfile xil_pn:name="../Control.vhd"/>
+      <outfile xil_pn:name="../IMem.vhd"/>
+      <outfile xil_pn:name="../MUX.vhd"/>
+      <outfile xil_pn:name="../MUX5.vhd"/>
+      <outfile xil_pn:name="../PCA.vhd"/>
+      <outfile xil_pn:name="../data_memory.vhd"/>
+      <outfile xil_pn:name="../jump_adder.vhd"/>
+      <outfile xil_pn:name="../programcounter.vhd"/>
+      <outfile xil_pn:name="../register_file.vhd"/>
+      <outfile xil_pn:name="../sign_extend.vhd"/>
+      <outfile xil_pn:name="../testbenches/ALU_Control_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/ALU_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/Control_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/Imem_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/PCAdder_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/PCounte_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/data_memory_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/jump_adder_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/mips_proc_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/mux_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/register_file_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/sign_extend_tb.vhd"/>
       <outfile xil_pn:name="toplevel_tb.vhd"/>
     </transform>
     <transform xil_pn:end_ts="1368623392" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4249046045056679549" xil_pn:start_ts="1368623392">
@@ -150,46 +150,55 @@
     <transform xil_pn:end_ts="1368623394" xil_pn:in_ck="6038244062278950263" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6549767674627207039" xil_pn:start_ts="1368623392">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="toplevel.vhf"/>
     </transform>
     <transform xil_pn:end_ts="1368623394" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2273359291653499815" xil_pn:start_ts="1368623394">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1368685676" xil_pn:in_ck="7980480394830566134" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1368685676">
+    <transform xil_pn:end_ts="1368950735" xil_pn:in_ck="-9001969077881054050" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1368950734">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/ALU.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/ALUControl.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/Control.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/IMem.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/MUX.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/MUX5.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/PCA.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/data_memory.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/jump_adder.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/programcounter.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/register_file.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/sign_extend.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/ALU_Control_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/ALU_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/Control_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/Imem_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/PCAdder_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/PCounte_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/data_memory_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/jump_adder_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/mips_proc_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/mux_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/register_file_tb.vhd"/>
-      <outfile xil_pn:name="../../../../School/MIPS_Project/MIPS_processor/testbenches/sign_extend_tb.vhd"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../ALU.vhd"/>
+      <outfile xil_pn:name="../ALUControl.vhd"/>
+      <outfile xil_pn:name="../Control.vhd"/>
+      <outfile xil_pn:name="../IMem.vhd"/>
+      <outfile xil_pn:name="../MUX.vhd"/>
+      <outfile xil_pn:name="../MUX5.vhd"/>
+      <outfile xil_pn:name="../PCA.vhd"/>
+      <outfile xil_pn:name="../data_memory.vhd"/>
+      <outfile xil_pn:name="../jump_adder.vhd"/>
+      <outfile xil_pn:name="../programcounter.vhd"/>
+      <outfile xil_pn:name="../register_file.vhd"/>
+      <outfile xil_pn:name="../sign_extend.vhd"/>
+      <outfile xil_pn:name="../testbenches/ALU_Control_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/ALU_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/Control_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/Imem_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/PCAdder_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/PCounte_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/data_memory_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/jump_adder_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/mips_proc_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/mux_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/register_file_tb.vhd"/>
+      <outfile xil_pn:name="../testbenches/sign_extend_tb.vhd"/>
       <outfile xil_pn:name="toplevel.vhf"/>
       <outfile xil_pn:name="toplevel_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1368685686" xil_pn:in_ck="7980480394830566134" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3901480836924358048" xil_pn:start_ts="1368685676">
+    <transform xil_pn:end_ts="1368950740" xil_pn:in_ck="-9001969077881054050" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3901480836924358048" xil_pn:start_ts="1368950735">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -198,9 +207,10 @@
       <outfile xil_pn:name="toplevel_toplevel_sch_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1368685687" xil_pn:in_ck="8526016656195831533" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4556430045622921907" xil_pn:start_ts="1368685686">
+    <transform xil_pn:end_ts="1368950740" xil_pn:in_ck="8526016656195831533" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4556430045622921907" xil_pn:start_ts="1368950740">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
@@ -211,13 +221,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1367239238" xil_pn:in_ck="6038244062278950263" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5350902704025480273" xil_pn:start_ts="1367239236">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1368950188" xil_pn:in_ck="6038244062278950263" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5350902704025480273" xil_pn:start_ts="1368950185">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="toplevel.vhf"/>
     </transform>
     <transform xil_pn:end_ts="1367239238" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2273359291653499815" xil_pn:start_ts="1367239238">
@@ -232,25 +238,20 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1366812472" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8977612015756273942" xil_pn:start_ts="1366812472">
-      <status xil_pn:value="AbortedRun"/>
+    <transform xil_pn:end_ts="1368950188" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8977612015756273942" xil_pn:start_ts="1368950188">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForced"/>
     </transform>
     <transform xil_pn:end_ts="1366812472" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5391812704745466639" xil_pn:start_ts="1366812472">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1367237986" xil_pn:in_ck="658898810098861417" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="592612486397353497" xil_pn:start_ts="1367237965">
-      <status xil_pn:value="AbortedRun"/>
+    <transform xil_pn:end_ts="1368950239" xil_pn:in_ck="763849938340839085" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="592612486397353497" xil_pn:start_ts="1368950188">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutOfDateForced"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -262,6 +263,8 @@
       <outfile xil_pn:name="toplevel.stx"/>
       <outfile xil_pn:name="toplevel.syr"/>
       <outfile xil_pn:name="toplevel.xst"/>
+      <outfile xil_pn:name="toplevel_toplevel_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="toplevel_toplevel_sch_tb_stx_beh.prj"/>
       <outfile xil_pn:name="toplevel_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
@@ -269,12 +272,13 @@
     <transform xil_pn:end_ts="1366813624" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784894232377633197" xil_pn:start_ts="1366813624">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1367237994" xil_pn:in_ck="6038244062278944945" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6507023427331598926" xil_pn:start_ts="1367237986">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="toplevel.bld"/>

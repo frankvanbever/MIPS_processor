@@ -21,10 +21,10 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/frank/School/MIPS_Project/MIPS_processor/PCA.vhd";
+static const char *ng0 = "/home/frank/School/MIPS_processor/PCA.vhd";
 extern char *IEEE_P_3620187407;
 
-char *ieee_p_3620187407_sub_436279890_3965413181(char *, char *, char *, char *, int );
+char *ieee_p_3620187407_sub_2255506239096166994_3965413181(char *, char *, char *, char *, int );
 
 
 static void work_a_1593819624_3212880686_p_0(char *t0)
@@ -44,10 +44,10 @@ static void work_a_1593819624_3212880686_p_0(char *t0)
     char *t13;
 
 LAB0:    xsi_set_current_line(41, ng0);
-    t2 = (t0 + 592U);
+    t2 = (t0 + 1032U);
     t3 = *((char **)t2);
-    t2 = (t0 + 2656U);
-    t4 = ieee_p_3620187407_sub_436279890_3965413181(IEEE_P_3620187407, t1, t3, t2, 4);
+    t2 = (t0 + 4216U);
+    t4 = ieee_p_3620187407_sub_2255506239096166994_3965413181(IEEE_P_3620187407, t1, t3, t2, 4);
     t5 = (t1 + 12U);
     t6 = *((unsigned int *)t5);
     t7 = (1U * t6);
@@ -55,14 +55,14 @@ LAB0:    xsi_set_current_line(41, ng0);
     if (t8 == 1)
         goto LAB2;
 
-LAB3:    t9 = (t0 + 1556);
-    t10 = (t9 + 32U);
+LAB3:    t9 = (t0 + 2744);
+    t10 = (t9 + 56U);
     t11 = *((char **)t10);
-    t12 = (t11 + 32U);
+    t12 = (t11 + 56U);
     t13 = *((char **)t12);
     memcpy(t13, t4, 32U);
     xsi_driver_first_trans_fast_port(t9);
-    t2 = (t0 + 1512);
+    t2 = (t0 + 2664);
     *((int *)t2) = 1;
 
 LAB1:    return;

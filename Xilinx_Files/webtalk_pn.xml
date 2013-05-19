@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Mon Apr 29 14:19:26 2013">
+<application name="pn" timeStamp="Sun May 19 09:56:28 2013">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="A344D3CD0CAB091740DAB1D1DB3622B9" type="project"/>
 <property name="ProjectIteration" value="0" type="project"/>
-<property name="ProjectFile" value="/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/MIPS_processor_2.xise" type="project"/>
+<property name="ProjectFile" value="/home/frank/School/MIPS_processor/Xilinx_Files/MIPS_processor_2.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2013-04-24T13:57:22" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -18,7 +18,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_OverwriteSym" value="true" type="process"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
-<property name="PROP_SelectedInstanceHierarchicalPath" value="/toplevel" type="process"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/ALU_tb/uut" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="Schematic" type="design"/>
@@ -28,7 +28,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_intWbtProjectID" value="A344D3CD0CAB091740DAB1D1DB3622B9" type="design"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
-<property name="PROP_selectedSimRootSourceNode_behav" value="work.toplevel" type="process"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.ALU" type="process"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROP_AutoTop" value="false" type="design"/>
 <property name="PROP_DevFamily" value="Spartan6" type="design"/>
@@ -39,7 +39,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_DevSpeed" value="-3" type="design"/>
 <property name="PROP_PreferredLanguage" value="VHDL" type="design"/>
 <property name="FILE_SCHEMATIC" value="1" type="source"/>
-<property name="FILE_VHDL" value="24" type="source"/>
+<property name="FILE_VHDL" value="25" type="source"/>
 </section>
 </application>
 </document>

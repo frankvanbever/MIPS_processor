@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel_toplevel_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel_toplevel_sch_tb_isim_beh.wdb 
+Running: /home/frank/School/MIPS_processor/Xilinx_Files/toplevel_toplevel_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/frank/School/MIPS_processor/Xilinx_Files/toplevel_toplevel_sch_tb_isim_beh.wdb 
 ISim P.49d (signature 0xfbc00daa)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,13 +10,15 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_imem/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_imem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
-ERROR: Index 269488144 out of bound 0 to 63. 
-ERROR: In process data_memory.vhd:data_mem_proc 
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+ERROR: Index 8 out of bound 0 to 7. 
+ERROR: In process IMem.vhd:MemoryPC 
  
 INFO: Simulator is stopped.
 ISim P.49d (signature 0xfbc00daa)
@@ -26,13 +28,103 @@ WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for 
 This is a Lite version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_imem/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_imem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
-ERROR: Index 269488144 out of bound 0 to 63. 
-ERROR: In process data_memory.vhd:data_mem_proc 
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+ERROR: Index 8 out of bound 0 to 7. 
+ERROR: In process IMem.vhd:MemoryPC 
  
 INFO: Simulator is stopped.
+ISim P.49d (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_imem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+ERROR: Index 8 out of bound 0 to 7. 
+ERROR: In process IMem.vhd:MemoryPC 
+ 
+INFO: Simulator is stopped.
+ISim P.49d (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_imem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+ERROR: Index 8 out of bound 0 to 7. 
+ERROR: In process IMem.vhd:MemoryPC 
+ 
+INFO: Simulator is stopped.
+ISim P.49d (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_imem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+ERROR: Index 8 out of bound 0 to 7. 
+ERROR: In process IMem.vhd:MemoryPC 
+ 
+INFO: Simulator is stopped.
+ISim P.49d (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_imem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+ERROR: Index 8 out of bound 0 to 7. 
+ERROR: In process IMem.vhd:MemoryPC 
+ 
+INFO: Simulator is stopped.
+ISim P.49d (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_imem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_reg_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /toplevel_toplevel_sch_tb/UUT/i_datamem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# run all
+Stopped at time : 13213350 ns : File "/home/frank/School/MIPS_processor/Xilinx_Files/toplevel_tb.vhd" Line 49
 # exit 0
