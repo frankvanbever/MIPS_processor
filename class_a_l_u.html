@@ -25,14 +25,12 @@
  <tbody>
  <tr style="height: 56px;">
   
-  <td id="projectlogo"><img alt="Logo" src="ehb.jpg"/></td>
-  
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">ROLLMIPS
-   &#160;<span id="projectnumber">0.0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">MIPS processor implementation in VHDL</div>
+   <div id="projectbrief">MIPS processor implementation</div>
   </td>
   
   
@@ -98,98 +96,27 @@ Entities</h2></td></tr>
 <br/>
 <tr><td colspan="2"><h2><a name="Ports"></a>
 Ports</h2></td></tr>
- <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_l_u.html#ad506dc3c4d5a49b33075dcf2ea057306">ALU_Input_1</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">alu input 1 (rs)  <a href="#ad506dc3c4d5a49b33075dcf2ea057306"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_l_u.html#a657f38dca67063612c1c3d9327260efd">ALU_Input_2</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">alu input 2 (rt)  <a href="#a657f38dca67063612c1c3d9327260efd"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_l_u.html#a15e59062cfee013b791bf90106bfe0a2">ALU_Zero</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">alu zero output  <a href="#a15e59062cfee013b791bf90106bfe0a2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_l_u.html#a75eaa7827fe89e680e452286e5f64e93">ALU_Result</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">alu 32 bit output  <a href="#a75eaa7827fe89e680e452286e5f64e93"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_l_u.html#a160e9acd866b7a383a28d77c159bd52a">ALU_Control_In</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">3</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">input from alu control  <a href="#a160e9acd866b7a383a28d77c159bd52a"></a><br/></td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad506dc3c4d5a49b33075dcf2ea057306"></a><!-- doxytag: member="ALU::ALU_Input_1" ref="ad506dc3c4d5a49b33075dcf2ea057306" args="STD_LOGIC_VECTOR%(%31%%%downto%%%0%)" -->
+<a class="el" href="class_a_l_u.html#ad506dc3c4d5a49b33075dcf2ea057306">ALU_Input_1</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">alu input 1 (rs) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a657f38dca67063612c1c3d9327260efd"></a><!-- doxytag: member="ALU::ALU_Input_2" ref="a657f38dca67063612c1c3d9327260efd" args="STD_LOGIC_VECTOR%(%31%%%downto%%%0%)" -->
+<a class="el" href="class_a_l_u.html#a657f38dca67063612c1c3d9327260efd">ALU_Input_2</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">alu input 2 (rt) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15e59062cfee013b791bf90106bfe0a2"></a><!-- doxytag: member="ALU::ALU_Zero" ref="a15e59062cfee013b791bf90106bfe0a2" args="STD_LOGIC%" -->
+<a class="el" href="class_a_l_u.html#a15e59062cfee013b791bf90106bfe0a2">ALU_Zero</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">alu zero output <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75eaa7827fe89e680e452286e5f64e93"></a><!-- doxytag: member="ALU::ALU_Result" ref="a75eaa7827fe89e680e452286e5f64e93" args="STD_LOGIC_VECTOR%(%31%%%downto%%%0%)" -->
+<a class="el" href="class_a_l_u.html#a75eaa7827fe89e680e452286e5f64e93">ALU_Result</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">alu 32 bit output <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a160e9acd866b7a383a28d77c159bd52a"></a><!-- doxytag: member="ALU::ALU_Control_In" ref="a160e9acd866b7a383a28d77c159bd52a" args="STD_LOGIC_VECTOR%(%3%%%downto%%%0%)" -->
+<a class="el" href="class_a_l_u.html#a160e9acd866b7a383a28d77c159bd52a">ALU_Control_In</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">3</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">input from alu control <br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Use standard library. </p>
 <p>use logic elements this is a 32-bit alu with 2 32-bit inputs and a 32 bit output, it also has a zero output bit, it needs 4 control bits from the <a class="el" href="class_a_l_u.html" title="Use standard library.">ALU</a> control to function </p>
-</div><hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="ad506dc3c4d5a49b33075dcf2ea057306"></a><!-- doxytag: member="ALU::ALU_Input_1" ref="ad506dc3c4d5a49b33075dcf2ea057306" args="STD_LOGIC_VECTOR ( 31   downto   0 )" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_a_l_u.html#ad506dc3c4d5a49b33075dcf2ea057306">ALU_Input_1</a> <b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b> <code> [Port]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>alu input 1 (rs) </p>
-
-</div>
-</div>
-<a class="anchor" id="a657f38dca67063612c1c3d9327260efd"></a><!-- doxytag: member="ALU::ALU_Input_2" ref="a657f38dca67063612c1c3d9327260efd" args="STD_LOGIC_VECTOR ( 31   downto   0 )" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_a_l_u.html#a657f38dca67063612c1c3d9327260efd">ALU_Input_2</a> <b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b> <code> [Port]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>alu input 2 (rt) </p>
-
-</div>
-</div>
-<a class="anchor" id="a15e59062cfee013b791bf90106bfe0a2"></a><!-- doxytag: member="ALU::ALU_Zero" ref="a15e59062cfee013b791bf90106bfe0a2" args="STD_LOGIC " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_a_l_u.html#a15e59062cfee013b791bf90106bfe0a2">ALU_Zero</a> <b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b> <code> [Port]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>alu zero output </p>
-
-</div>
-</div>
-<a class="anchor" id="a75eaa7827fe89e680e452286e5f64e93"></a><!-- doxytag: member="ALU::ALU_Result" ref="a75eaa7827fe89e680e452286e5f64e93" args="STD_LOGIC_VECTOR ( 31   downto   0 )" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_a_l_u.html#a75eaa7827fe89e680e452286e5f64e93">ALU_Result</a> <b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b> <code> [Port]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>alu 32 bit output </p>
-
-</div>
-</div>
-<a class="anchor" id="a160e9acd866b7a383a28d77c159bd52a"></a><!-- doxytag: member="ALU::ALU_Control_In" ref="a160e9acd866b7a383a28d77c159bd52a" args="STD_LOGIC_VECTOR ( 3   downto   0 )" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_a_l_u.html#a160e9acd866b7a383a28d77c159bd52a">ALU_Control_In</a> <b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">3</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b> <code> [Port]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>input from alu control </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_a_l_u_8vhd.html">ALU.vhd</a></li>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>ALU.vhd</li>
 </ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->
@@ -209,7 +136,7 @@ Ports</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 17 2013 14:26:46 for ROLLMIPS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 19 2013 13:24:51 for ROLLMIPS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
