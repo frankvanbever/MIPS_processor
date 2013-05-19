@@ -12,7 +12,7 @@ It can currently execute following instructions:
 * slt
 * nor
 * beq
-* bnq
+* bne
 * addi
 * sw
 * lw

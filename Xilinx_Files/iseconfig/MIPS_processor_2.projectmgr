@@ -10,13 +10,13 @@
          <ClosedNode>/toplevel |home|frank|Dropbox|Workspaces|workspace_comp_arch|MIPS_processor_2|toplevel.sch</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>toplevel (/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel.sch)</SelectedItem>
+         <SelectedItem>i_ALU - ALU - Behavioral (/home/frank/School/MIPS_processor/ALU.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002d6000000020000000000000000000000000200000064ffffffff000000810000000300000002000002d60000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002ca000000020000000000000000000000000200000064ffffffff000000810000000300000002000002ca0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>toplevel (/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel.sch)</CurrentItem>
+      <CurrentItem>i_ALU - ALU - Behavioral (/home/frank/School/MIPS_processor/ALU.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
@@ -28,13 +28,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Implement Design</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017f0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000289000000010000000100000000000000000000000064ffffffff000000810000000000000001000002890000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Implement Design</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -45,7 +45,7 @@
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000075f000000040101000100000000000000000000000064ffffffff0000008100000000000000040000025b00000001000000000000005d0000000100000000000000840000000100000000000004230000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel.sch</CurrentItem>
+      <CurrentItem>/home/frank/School/MIPS_processor/Xilinx_Files/toplevel.sch</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -55,7 +55,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000064000000010001000100000000000000000000000064ffffffff000000810000000000000001000000640000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000007d000000010001000100000000000000000000000064ffffffff0000008100000000000000010000007d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -64,13 +64,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -90,42 +90,53 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/ALU_Control_tb - behavior |home|frank|School|MIPS_Project|MIPS_processor|testbenches|ALU_Control_tb.vhd</ClosedNode>
+         <ClosedNode>/ALU_Control_tb - behavior |home|frank|School|MIPS_processor|testbenches|ALU_Control_tb.vhd</ClosedNode>
          <ClosedNode>/ALU_tb - behavior |home|frank|School|MIPS_Project|MIPS_processor|testbenches|ALU_tb.vhd</ClosedNode>
+         <ClosedNode>/ALU_tb - behavior |home|frank|School|MIPS_processor|testbenches|ALU_tb.vhd</ClosedNode>
          <ClosedNode>/Control_tb - behavior |home|frank|School|MIPS_Project|MIPS_processor|testbenches|Control_tb.vhd</ClosedNode>
+         <ClosedNode>/Control_tb - behavior |home|frank|School|MIPS_processor|testbenches|Control_tb.vhd</ClosedNode>
          <ClosedNode>/Imem_tb - behavior |home|frank|School|MIPS_Project|MIPS_processor|testbenches|Imem_tb.vhd</ClosedNode>
+         <ClosedNode>/Imem_tb - behavior |home|frank|School|MIPS_processor|testbenches|Imem_tb.vhd</ClosedNode>
          <ClosedNode>/PCAdder_tb - behavior |home|frank|School|MIPS_Project|MIPS_processor|testbenches|PCAdder_tb.vhd</ClosedNode>
+         <ClosedNode>/PCAdder_tb - behavior |home|frank|School|MIPS_processor|testbenches|PCAdder_tb.vhd</ClosedNode>
          <ClosedNode>/PCounte_tb - behavior |home|frank|School|MIPS_Project|MIPS_processor|testbenches|PCounte_tb.vhd</ClosedNode>
+         <ClosedNode>/PCounte_tb - behavior |home|frank|School|MIPS_processor|testbenches|PCounte_tb.vhd</ClosedNode>
          <ClosedNode>/data_memory_tb - behavior |home|frank|School|MIPS_Project|MIPS_processor|testbenches|data_memory_tb.vhd</ClosedNode>
+         <ClosedNode>/data_memory_tb - behavior |home|frank|School|MIPS_processor|testbenches|data_memory_tb.vhd</ClosedNode>
          <ClosedNode>/jump_adder_tb - behavior |home|frank|School|MIPS_Project|MIPS_processor|testbenches|jump_adder_tb.vhd</ClosedNode>
+         <ClosedNode>/jump_adder_tb - behavior |home|frank|School|MIPS_processor|testbenches|jump_adder_tb.vhd</ClosedNode>
          <ClosedNode>/mips_proc_tb - behavior |home|frank|School|MIPS_Project|MIPS_processor|testbenches|mips_proc_tb.vhd</ClosedNode>
+         <ClosedNode>/mips_proc_tb - behavior |home|frank|School|MIPS_processor|testbenches|mips_proc_tb.vhd</ClosedNode>
          <ClosedNode>/mux_tb - behavior |home|frank|School|MIPS_Project|MIPS_processor|testbenches|mux_tb.vhd</ClosedNode>
+         <ClosedNode>/mux_tb - behavior |home|frank|School|MIPS_processor|testbenches|mux_tb.vhd</ClosedNode>
          <ClosedNode>/register_file_tb - behavior |home|frank|School|MIPS_Project|MIPS_processor|testbenches|register_file_tb.vhd</ClosedNode>
+         <ClosedNode>/register_file_tb - behavior |home|frank|School|MIPS_processor|testbenches|register_file_tb.vhd</ClosedNode>
          <ClosedNode>/sign_extend_tb - behavioral |home|frank|School|MIPS_Project|MIPS_processor|testbenches|sign_extend_tb.vhd</ClosedNode>
+         <ClosedNode>/sign_extend_tb - behavioral |home|frank|School|MIPS_processor|testbenches|sign_extend_tb.vhd</ClosedNode>
          <ClosedNode>/toplevel |home|frank|Dropbox|Workspaces|workspace_comp_arch|MIPS_processor_2|toplevel.sch</ClosedNode>
          <ClosedNode>/toplevel_toplevel_sch_tb - behavioral |home|frank|Dropbox|Workspaces|workspace_comp_arch|MIPS_processor_2|toplevel_tb.vhd</ClosedNode>
+         <ClosedNode>/toplevel_toplevel_sch_tb - behavioral |home|frank|School|MIPS_processor|Xilinx_Files|toplevel_tb.vhd/UUT - toplevel</ClosedNode>
       </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>toplevel_toplevel_sch_tb - behavioral (/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel_tb.vhd)</SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000039b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000039b0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002e3000000020000000000000000000000000200000064ffffffff000000810000000300000002000002e30000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>toplevel_toplevel_sch_tb - behavioral (/home/frank/Dropbox/Workspaces/workspace_comp_arch/MIPS_processor_2/toplevel_tb.vhd)</CurrentItem>
+      <CurrentItem>UUT - toplevel (/home/frank/School/MIPS_processor/Xilinx_Files/toplevel.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Update All Schematic Files</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000172000000010000000100000000000000000000000064ffffffff000000810000000000000001000001720000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000135000000010000000100000000000000000000000064ffffffff000000810000000000000001000001350000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Update All Schematic Files</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
@@ -133,27 +144,27 @@
          <ClosedNode>ISim Simulator</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000172000000010000000100000000000000000000000064ffffffff000000810000000000000001000001720000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000298000000010000000100000000000000000000000064ffffffff000000810000000000000001000002980000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff000000000000000200000111000000e601000000060100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000298000000010000000100000000000000000000000064ffffffff000000810000000000000001000002980000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>
