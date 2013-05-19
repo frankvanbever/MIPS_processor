@@ -17,4 +17,4 @@ It can currently execute following instructions:
 * sw
 * lw
 
-[processor](http://84d1f3.medialib.glogster.com/media/5e/5edb633df18c0dcf91e1cbde01f2c6d03f9cafc6e976a7e1367fadf91058714a/tumblr-l53ztybc0q1qcbxf0o1-400-jpg.jpg)
+![processor](https://dl.dropboxusercontent.com/u/16037101/rollmips.png)
