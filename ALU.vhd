@@ -38,6 +38,7 @@ end ALU;
 --! @details the zero output bit is set if the result of the ALU is 0
 architecture Behavioral of ALU is
  shared variable Result: Std_logic_vector (31 downto 0);		--! Register to store Result of alu
+ shared variable Result64:Std_logic_vector(63 downto 0); 
 begin
 		
 		ALU_Result_Calc: process(ALU_Input_1,ALU_Input_2,ALU_Control_In)
@@ -58,10 +59,13 @@ begin
 			end if; -- set on les then calculation
 		elsif (ALU_Control_In = "1100") then 
 			Result := ALU_Input_1 NOR ALU_Input_2;		-- NOR
+		elsif (ALU_Control_In = "1101") then 
+			Result64 := ALU_Input_1*ALU_Input_2;		-- mult
+			Result := Result64(31 downto 0);
 		else 
 			Result := X"10101010";		--error code
 		end if;
-
+--why is the switch case gone here?
 
 --		if(ALU_Control_In="0111")then		-- set on less then changes the result
 --			if(Result<X"00000000") then		--if input2 > input1
@@ -76,7 +80,7 @@ begin
 		else
 			ALU_Zero<='0';
 		end if;
-		ALU_Result <= Result;				--set result on output
+		ALU_Result <=Result;
 		end process ALU_Result_Calc;
 
 end Behavioral;

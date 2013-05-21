@@ -52,7 +52,7 @@ begin
   MemoryPC : process (PC)
     subtype  word is std_logic_vector(31 downto 0);
     type     memory is array (0 to 7) of word;
-    variable myMem : memory := (X"20080000", X"20090001", X"01095020", X"00094020", X"000a4820", X"1000fffc", X"00000020", X"00000020");
+    variable myMem : memory := (X"20080005", X"20090005", X"01095018", X"00094020", X"000a4820", X"1000fffc", X"00000020", X"00000020");
 
 -- add $t0, $t1, $t2	add $8, $9, $10 012A4020
 -- sub $t0, $t1, $t2 sub $8, $9, $10 012A4022
@@ -73,6 +73,11 @@ begin
 
 -- sw $10, 1($0) AC080001
 -- lw $11, 1($0) 8C0B0001
+
+
+-- mult $8,$9 01095018		--multiply but defined rd as output to register 10
+
+
 
 -- fibonacci
 

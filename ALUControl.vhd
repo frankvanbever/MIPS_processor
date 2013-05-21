@@ -58,6 +58,7 @@ begin
 					WHEN  "100101"  =>  ALU_Control_Out <= "0001";	--OR
 					WHEN  "101010"  =>  ALU_Control_Out <= "0111";	--slt
 					WHEN	"100111"  =>  ALU_Control_Out <= "1100";  --NOR
+					WHEN 	"011000"	 => ALU_Control_Out <= "1101"; --mult
 					WHEN OTHERS =>  ALU_Control_Out <= "1111";		--error value
 					END CASE;
 			 else
