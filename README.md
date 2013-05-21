@@ -16,5 +16,8 @@ It can currently execute following instructions:
 * addi
 * sw
 * lw
+* mult	(with Hi and Lo registers)
+* mfhi
+* mflo
 
 ![processor](https://dl.dropboxusercontent.com/u/16037101/rollmips.png)
