@@ -27,7 +27,7 @@ use IEEE.STD_LOGIC_unsigned.all;
 entity ALU is
     Port ( ALU_Input_1 : in  STD_LOGIC_VECTOR (31 downto 0);		--! alu input 1 (rs)
            ALU_Input_2 : in  STD_LOGIC_VECTOR (31 downto 0);		--! alu input 2 (rt)
-           ALU_Zero : out  STD_LOGIC;					--! alu zero output
+           ALU_Zero : out  STD_LOGIC;															--! alu zero output
            ALU_Result : out  STD_LOGIC_VECTOR (31 downto 0);		--! alu 32 bit output
            ALU_Control_In : in  STD_LOGIC_VECTOR (3 downto 0)		--! input from alu control
 			  );
@@ -39,6 +39,8 @@ end ALU;
 architecture Behavioral of ALU is
  shared variable Result: Std_logic_vector (31 downto 0);		--! Register to store Result of alu
  shared variable Result64:Std_logic_vector(63 downto 0); 
+ shared variable Hi:Std_logic_vector(31 downto 0);					--! Hi reg for mult
+ shared variable Lo:Std_logic_vector(31 downto 0);					--! Lo reg for mult
 begin
 		
 		ALU_Result_Calc: process(ALU_Input_1,ALU_Input_2,ALU_Control_In)
@@ -61,8 +63,14 @@ begin
 			Result := ALU_Input_1 NOR ALU_Input_2;		-- NOR
 		elsif (ALU_Control_In = "1101") then 
 			Result64 := ALU_Input_1*ALU_Input_2;		-- mult
-			Result := Result64(31 downto 0);
-		else 
+			Hi := Result64(63 downto 32);
+			Lo:=Result64(31 downto 0);								-- puts data in registers
+			Result:=Lo;																-- puts the Lo data also in result so can be used to directly write to rd
+		elsif(ALU_Control_In="1110")then						--puts Lo out
+			Result:=Lo;
+		elsif(ALU_Control_In="1111")then						--puts Hi out
+			Result:=Hi;
+		else
 			Result := X"10101010";		--error code
 		end if;
 --why is the switch case gone here?
@@ -80,6 +88,7 @@ begin
 		else
 			ALU_Zero<='0';
 		end if;
+		
 		ALU_Result <=Result;
 		end process ALU_Result_Calc;
 
