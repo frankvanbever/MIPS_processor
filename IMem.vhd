@@ -52,7 +52,7 @@ begin
   MemoryPC : process (PC)
     subtype  word is std_logic_vector(31 downto 0);
     type     memory is array (0 to 7) of word;
-    variable myMem : memory := (X"20080005", X"20090005", X"01090018", X"00005010", X"00005812", X"1000fffc", X"00000020", X"00000020");
+    variable myMem : memory := (X"20080005", X"20090001", X"00085820", X"01094022", X"01685818", X"1528FFFD", X"00000020", X"00000020");
 
 -- add $t0, $t1, $t2	add $8, $9, $10 012A4020
 -- sub $t0, $t1, $t2 sub $8, $9, $10 012A4022
@@ -82,8 +82,6 @@ begin
 -- mfhi $10		00005010
 -- mflo $11  	00005812
 
-
-
 -- fibonacci
 
 -- # Initialization
@@ -96,6 +94,20 @@ begin
 -- add	$t0,$zero,$t1		# store previous value in lower register		00094020
 -- add	$t1,$zero,$t2		# store new value in register						000a4820
 -- beq	$zero,$zero,start_loop	# next iteration								1000fffc
+
+--factorial
+-- # Initialization
+--
+--addi $8, $0,5							20080005
+--addi $9, $0,1							20090001
+--add $11,$0,$8						00085820
+
+--start loop:
+--sub $8,$8,$9							01094022
+--mul $11,$11,$8					71685802	(01685818)
+--bne $9,$8,loop						1528fffd
+--
+
 
     begin
       instruction <= myMem(conv_integer(PC(31 downto 2)));
